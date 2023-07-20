@@ -1,0 +1,975 @@
+@import './../../index.scss';
+
+@include media-breakpoint(basic) {
+    .lp-navBar {
+        background-color: #161F2C;
+
+        & .lp-navbar-brand {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+
+            & .logoText {
+                max-width: 180px;
+            }
+
+            & .lp-logo2 {
+                display: contents;
+                width: 36px;
+                // display: none;
+
+                & img {
+                    max-width: 57px;
+                }
+            }
+        }
+
+        & .lp-navLink {
+            & .navbar-nav {
+                position: relative;
+                padding: 2px;
+
+                & .lp-nav-item {
+                    position: relative;
+                    padding: 1.4px;
+                    border-radius: 5px;
+                    // overflow: hidden;
+
+                    // &:hover {
+                    //     &::after {
+                    //         content: '';
+                    //         background: linear-gradient(90deg, #5578FE 100%, #161F2C 0%);
+                    //     }
+
+                    // }
+
+                    & .nav-link {
+                        // // background: #222D3D;
+                        // // background-color: #5578FE;
+                        // // background-color: #6324D7;
+                        // background: linear-gradient(0deg, #6324D7, #8a54ed);
+                        // // box-shadow: 0px -2px 6px rgb(185 185 185 / 42%);
+                        // box-shadow: 0px -2px 6px 0.7px rgba(185, 185, 185, 0.42);
+                        // filter: blur(0.3px);
+                        // border-radius: 10px;
+                        // font-style: normal;
+                        // font-weight: 700;
+                        // font-size: 14px;
+                        // line-height: 17px;
+                        // text-align: center;
+                        // font-feature-settings: "smcp", "c2sc";
+                        // font-variant: all-small-caps;
+                        // color: #FFFFFF;
+                        // z-index: 1;
+                        // position: relative;
+
+                        background: linear-gradient(0deg, #6324D7, #8a54ed);
+                        // box-shadow: 0px -2px 9px 0.7px rgba(185, 185, 185, 0.42);
+                        box-shadow: 0px -2px 7px 0.7px rgba(185, 185, 185, 0.35);
+                        filter: blur(0.3px);
+                        border-radius: 10px;
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 17px;
+                        text-align: center;
+                        font-feature-settings: "smcp", "c2sc";
+                        font-variant: all-small-caps;
+                        color: #FFFFFF;
+                        z-index: 1;
+                        position: relative;
+
+                        &.active {}
+
+
+                    }
+
+                    &::after {
+                        // content: "";
+                        // position: absolute;
+                        // width: 100%;
+                        // height: 100%;
+                        // inset: 0;
+                        // border-radius: 10px;
+                        // // background: linear-gradient(90deg, #5578FE 20%, #161F2C 60%);
+                        // background: linear-gradient(180deg, #fff 20%, #6324D7 60%);
+                        // transition: all 1s ease-in-out;
+                        // box-shadow: 0px 2px 6px rgb(0 0 0);
+                        // z-index: 0;
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        inset: 0;
+                        border: 1px solid #212529;
+                        background: linear-gradient(180deg, #fff 20%, #6324D7 60%);
+                        z-index: 0;
+                        box-shadow: 0px 2px 6px rgb(0, 0, 0);
+                        border-radius: 10px;
+
+                    }
+
+                }
+            }
+        }
+
+        & .lp-navbarButton {
+            & button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #00990A;
+                border-radius: 5px;
+                font-weight: 700;
+                font-size: 17px;
+                line-height: 23px;
+                text-align: center;
+                color: #FFFFFF;
+                height: 36.29px;
+                transition: all ease-in-out 0.3s;
+
+                &:hover {
+                    background-color: darken(#00990A, 5);
+                }
+
+                &:active {
+                    background-color: #00990A;
+                    color: #FFFFFF;
+                    outline: none !important;
+                }
+            }
+        }
+    }
+
+    .lp-mobilenav {
+        & .lp-navul {
+            & .lp-nav-item {
+                position: relative;
+                padding: 1.4px;
+                border-radius: 5px;
+                // overflow: hidden;
+
+                & .nav-link {
+                    // background: #222D3D;
+                    // background-color: #6324D7;
+                    background: linear-gradient(0deg, #6324D7, #8a54ed);
+                    // box-shadow: 4px 2px 5px rgba(0, 0, 0, 0.5);
+                    // box-shadow: 0px -2px 9px 0.7px rgba(185, 185, 185, 0.42);
+                    box-shadow: 0px -2px 7px 0.7px rgba(185, 185, 185, 0.35);
+
+                    filter: blur(0.3px);
+                    border-radius: 10px;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 14px;
+                    // line-height: 28px;
+                    line-height: 17px;
+                    text-align: center;
+                    font-variant: all-small-caps;
+                    color: #FFFFFF;
+                    z-index: 1;
+                    position: relative;
+
+                    // &:hover {
+                    //     background-color: #5578FE;
+                    //     color: #FFFFFF;
+
+                    // }
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    inset: 0;
+                    border: 1px solid #212529;
+                    background: linear-gradient(180deg, #fff 20%, #6324D7 60%);
+                    z-index: 0;
+                    box-shadow: 0px 2px 6px rgb(0 0 0);
+                    border-radius: 10px;
+                }
+
+                // &:hover {
+                //     &::after {
+                //         content: '';
+                //         background: linear-gradient(90deg, #5578FE 100%, #161F2C 100%);
+                //     }
+
+                // }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {
+    .lp-navBar {
+
+        & .lp-navbar-brand {
+
+            & img {}
+
+            & .lp-logo2 {
+                display: contents;
+
+                & img {}
+            }
+        }
+
+        & .lp-navLink {
+            & .navbar-nav {
+                & .lp-nav-item {
+                    & .nav-link {
+
+                        &.active {}
+                    }
+                }
+            }
+        }
+
+        & .lp-navbarButton {
+            & button {
+
+
+                &:active {}
+            }
+        }
+    }
+
+    .lp-mobilenav {
+        & .lp-navul {
+
+            & .lp-nav-item {
+                & .nav-link {}
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {}
+
+@include media-breakpoint-down(sm) {
+    .lp-navBar {
+
+        & .lp-navbar-brand {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            height: 25px;
+
+            & img {}
+
+            & .lp-logo2 {
+
+                & img {}
+            }
+        }
+
+        & .lp-navLink {
+            & .navbar-nav {
+                & .lp-nav-item {
+                    & .nav-link {
+
+                        &.active {}
+                    }
+                }
+            }
+        }
+
+        & .lp-navbarButton {
+            & button {
+                width: 90px;
+                // width: 70px;
+                height: 27px;
+                font-size: 12px;
+                // font-size: 10px;
+                line-height: 15px;
+
+
+                &:active {}
+            }
+        }
+    }
+
+    .lp-mobilenav {
+        & .lp-navul {
+            white-space: nowrap;
+            overflow: auto hidden;
+
+            & .lp-nav-item {
+                & .nav-link {
+                    font-size: 12px;
+                    line-height: 15px;
+                }
+            }
+        }
+    }
+}
+
+
+@include media-breakpoint-down(sm) {
+    .lp-navBar {
+
+        & .lp-navbar-brand {
+
+
+            & img {}
+
+            & .lp-logo2 {
+
+                & img {}
+            }
+        }
+
+        & .lp-navLink {
+            & .navbar-nav {
+                & .lp-nav-item {
+                    & .nav-link {
+
+                        &.active {}
+                    }
+                }
+            }
+        }
+
+        & .lp-navbarButton {
+            & button {
+
+
+
+                &:active {}
+            }
+        }
+    }
+}
+
+@media (max-width: 390.99px) {
+    .lp-navBar {
+
+        & .lp-navbar-brand {
+
+            & img {}
+
+            & .lp-logo2 {
+
+                & img {}
+            }
+        }
+
+        & .lp-navLink {
+            & .navbar-nav {
+                & .lp-nav-item {
+                    & .nav-link {
+
+                        &.active {}
+                    }
+                }
+            }
+        }
+
+        & .lp-navbarButton {
+            & button {
+                // width: 90px;
+                width: 70px;
+                height: 27px;
+                // font-size: 12px;
+                font-size: 10px;
+                line-height: 15px;
+
+                &:active {}
+            }
+        }
+    }
+
+    .lp-mobilenav {
+        padding: 0px 10px;
+
+        & .lp-navul {
+            justify-content: unset !important;
+            flex-wrap: nowrap;
+            gap: 0 !important;
+            white-space: nowrap;
+            overflow: auto hidden;
+
+            & .lp-nav-item {
+                min-width: max-content;
+                margin-right: 10px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                & .nav-link {
+                    min-width: max-content;
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1200px) {
+    .lp-navBar {
+
+        & .lp-navbar-brand {
+
+            & img {}
+
+            & .lp-logo2 {
+
+                & img {}
+            }
+        }
+
+        & .lp-navLink {
+            & .navbar-nav {
+                & .lp-nav-item {
+                    & .nav-link {
+                        // font-size: small;
+                        font-size: 10px;
+                        padding: 6px !important;
+
+                        &.active {}
+                    }
+                }
+            }
+        }
+
+        & .lp-navbarButton {
+
+            & button {
+                width: 8vw;
+                min-width: 90px;
+                font-size: 12px;
+
+                &:active {}
+            }
+        }
+    }
+
+    .lp-mobilenav {
+        padding: 0px 10px;
+
+        & .lp-navul {
+            & .lp-nav-item {
+                &:last-child {}
+
+                & .nav-link {}
+            }
+        }
+    }
+}
+
+
+
+// ** [ Modal ] **
+.lp-ragisterModal {
+    backdrop-filter: blur(25px);
+
+    & .modal-dialog {
+        & .modal-content {
+            border: none;
+            filter: drop-shadow(5px 5px 30px rgba(99, 36, 215, 0.4));
+            border-radius: 20px;
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+            background-color: #504f70;
+            background-image: url(./../../assets/picture/modalbg.png);
+            background-position: top left;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            & .modal-header {
+                & button {
+                    filter: invert(1);
+                    opacity: 1;
+                    box-shadow: none;
+                    border: none;
+                }
+            }
+
+            & .modal-body {
+                & .lp-userName {
+                    font-size: 23px;
+                    line-height: 28px;
+
+                    & span {
+                        font-size: 18px;
+                        line-height: 22px;
+                    }
+                }
+
+
+                & .form {
+
+
+
+                    & .lp-registerHeading {
+                        font-size: 24px;
+                        line-height: 29px;
+                    }
+
+                    & .form-control {
+                        background: rgba(147, 172, 211, 0.5);
+                        border-radius: 7px;
+                        height: 58.27px;
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 24px;
+                        color: rgba(255, 255, 255, 0.8);
+
+                        &::placeholder {
+                            color: rgba(255, 255, 255, 0.8);
+                        }
+
+                        &[type="date"]::-webkit-calendar-picker-indicator {
+                            color: red;
+                        }
+                    }
+
+                    // .registerDate input[type="date"]::-webkit-calendar-picker-indicator {
+                    // filter: hue-rotate(120deg);
+                    // color-scheme: dark;
+                    // }
+
+                    & .form-check {
+                        & .form-check-input {
+                            width: 17px;
+                            height: 17px;
+                            border: 1px solid #03B80F;
+                            background-color: transparent;
+                            border-radius: 2px;
+                            box-shadow: none;
+
+                            &:checked {
+                                background-color: #03B80F;
+                            }
+                        }
+
+                        & .form-check-label {
+                            margin-left: 5px;
+                            font-weight: 600;
+                            font-size: 12px;
+                            line-height: 15px;
+                            color: #93ACD3;
+
+                            & span {
+                                color: #00990A;
+                            }
+                        }
+                    }
+
+
+
+                    & .lp-ragisterBtn {
+                        background: #00990A;
+                        border-radius: 7px;
+                        height: 49px;
+                        font-weight: 700;
+                        font-size: 22px;
+                        line-height: 27px;
+                        color: #FFFFFF;
+                        transition: all ease-in-out 0.3s;
+
+                        &:hover {
+                            background: darken(#00990A, 5);
+                        }
+                    }
+                }
+            }
+
+            & .modal-footer {
+                & .lp-footerImg {
+                    height: 30px;
+
+                    & img {
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {
+    .lp-ragisterModal {
+        & .modal-dialog {
+            & .modal-content {
+                border-radius: 10px;
+
+                & .modal-header {
+                    & button {}
+                }
+
+                & .lp-registerHeading {
+                    font-size: 20px;
+                    line-height: 25px;
+                }
+
+                & .modal-body {
+                    & .lp-userName {
+                        font-size: 20px;
+                        line-height: 25px;
+
+                        & span {
+                            font-size: 16px;
+                            line-height: 20px;
+                        }
+                    }
+
+                    & .form {
+                        & .form-control {
+                            font-size: 18px;
+                            line-height: 22px;
+                            height: 45px;
+
+                            &::placeholder {}
+                        }
+
+                        & .form-check {
+                            & .form-check-input {
+
+                                // width: 17px;
+                                // height: 17px;
+                                &:checked {}
+                            }
+
+                            & .form-check-label {
+                                // font-size: 12px;
+                                // line-height: 15px;
+                            }
+                        }
+
+                        & .lp-ragisterBtn {
+                            height: 45px;
+                            font-size: 20px;
+                            line-height: 25px;
+
+                            &:hover {}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+
+
+    .lp-ragisterModal {
+        & .modal-dialog {
+            & .modal-content {
+                & .modal-header {
+                    & button {}
+                }
+
+                & .lp-registerHeading {
+                    font-size: 18px;
+                    line-height: 22px;
+                }
+
+                & .modal-body {
+                    & .lp-userName {
+
+                        // font-size: 20px;
+                        // line-height: 25px;
+                        & span {
+                            font-size: 14px;
+                            line-height: 28px;
+                        }
+                    }
+
+                    & .form {
+                        & .form-control {
+                            font-size: 16px;
+                            line-height: 20px;
+                            background: transparent;
+                            border: 0.5px solid #93ACD3 !important;
+                            border-radius: 4px;
+                            height: 40px;
+                            font-weight: 500;
+
+                            &::placeholder {}
+                        }
+
+                        & .form-check {
+                            & .form-check-input {
+                                width: 15px;
+                                height: 15px;
+
+                                &:checked {}
+                            }
+
+                            & .form-check-label {
+                                font-size: 10px;
+                                line-height: 13px;
+                            }
+                        }
+
+                        & .lp-ragisterBtn {
+                            height: 40px;
+                            font-size: 18px;
+                            line-height: 22px;
+
+                            &:hover {}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+
+    .lp-navBar {
+
+        & .lp-navbar-brand {
+            height: 17px;
+
+            & .logoText {
+                max-width: 83px;
+
+            }
+
+            & .lp-logo2 {
+                display: contents;
+                width: 36px;
+                // display: none;
+
+                & img {
+                    max-width: 22px;
+                    height: 3px;
+                }
+            }
+        }
+
+        & .lp-navLink {
+            & .navbar-nav {
+                & .lp-nav-item {
+                    & .nav-link {
+                        &.active {}
+                    }
+                }
+            }
+        }
+
+        & .lp-navbarButton {
+
+            & button {
+                // background-color: "red";
+                // font-size: xx-large;
+
+                &:active {}
+            }
+        }
+    }
+
+
+    .lp-ragisterModal {
+        & .modal-dialog {
+            & .modal-content {
+                & .modal-header {
+                    & button {}
+                }
+
+                & .lp-registerHeading {
+                    font-size: 17px;
+                    line-height: 21px;
+                }
+
+                & .modal-body {
+                    & .lp-dambleUser {
+                        & img {
+                            width: 100%;
+                        }
+                    }
+
+                    & .lp-userName {
+                        & span {
+                            font-size: 11px;
+                            line-height: 13px;
+                        }
+                    }
+
+                    & .form {
+                        & .form-control {
+                            background: transparent;
+                            height: 35px;
+                            font-size: 12px;
+                            line-height: 15px;
+
+                            &::placeholder {}
+                        }
+
+                        & .form-check {
+                            & .form-check-input {
+                                width: 15px;
+                                height: 15px;
+
+                                &:checked {}
+                            }
+
+                            & .form-check-label {
+                                // font-size: 8px;
+                                // line-height: 10px;
+                            }
+                        }
+
+                        & .lp-ragisterBtn {
+                            height: 32px;
+                            font-size: 17px;
+                            line-height: 21px;
+
+                            &:hover {}
+                        }
+                    }
+                }
+
+                & .modal-footer {
+                    & .lp-footerImg {
+                        height: 27px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 360.99px) {
+    .lp-navBar {
+
+        & .lp-navbar-brand {
+            & img {}
+
+            & .lp-logo2 {
+                & img {}
+            }
+        }
+
+        & .lp-navLink {
+            & .navbar-nav {
+
+                & .lp-nav-item {
+
+                    & .nav-link {
+                        &.active {}
+
+
+                    }
+
+                    &::after {}
+
+                }
+            }
+        }
+
+        & .lp-navbarButton {
+            & button {
+                width: 7vw;
+                min-width: 65px;
+                font-size: 9px;
+                padding: 0 !important;
+
+                &:hover {}
+
+                &:active {}
+            }
+        }
+    }
+
+    .lp-mobilenav {
+        & .lp-navul {
+            & .lp-nav-item {
+
+                & .nav-link {}
+
+                &::after {
+                    content: "";
+                    // background: transparent;
+                }
+
+            }
+        }
+    }
+}
+
+
+@media (max-width: 330.99px) {
+    .lp-navBar {
+
+        & .lp-navbar-brand {
+            & img {}
+
+            & .lp-logo2 {
+                & img {}
+            }
+        }
+
+        & .lp-navLink {
+            & .navbar-nav {
+
+                & .lp-nav-item {
+
+                    & .nav-link {
+                        &.active {}
+
+
+                    }
+
+                    &::after {}
+
+                }
+            }
+        }
+
+        & .lp-navbarButton {
+            & button {
+                width: 7vw;
+                min-width: 60px;
+                font-size: 9px;
+
+                &:hover {}
+
+                &:active {}
+            }
+        }
+    }
+
+    .lp-mobilenav {
+        & .lp-navul {
+            & .lp-nav-item {
+
+                & .nav-link {}
+
+                &::after {
+                    content: "";
+                    // background: transparent;
+                }
+
+            }
+        }
+    }
+}

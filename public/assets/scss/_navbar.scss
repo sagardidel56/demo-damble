@@ -1,0 +1,285 @@
+// .navbar {
+//     z-index: 100;
+//     background: #161F2C;
+//     box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.25);
+//     height: 60px;
+//     & .navbar-brand {
+//         height: 40px;
+//     }
+// }
+
+// .sidebar{
+//     top: 60px;
+//     left: 0;
+//     bottom: 0;
+//     width: 217.286px;
+//     z-index: 50;
+//     transition: all 0.3s;
+//     padding: 20px;
+//     overflow-y: auto;
+//     box-shadow: 0px 0px 20px rgb(1 41 112 / 10%);
+//     background: #161F2C;
+// }
+
+// .main{
+//     & .mainContaint {
+//         margin-left: 217.286px;
+//         margin-top: 60px;
+//         padding: 45.65px 62.81px 0px 99.71px;
+//         transition: all 0.3s;                                                                                                                                                      
+//         &.affiliatePage{
+//             padding: 22px 22px 50px 22px !important;
+//         }
+//         &.vipclubMain {
+//             padding: 0 71px 0 43px;
+//         }
+//         &.PromotionPage {
+//             padding: 0 85px 0 107px;
+//         }
+//         &.afflitiateDashboard{
+//             padding: 35px 39px 87px 35px !important;
+//         }
+//     }
+    
+//     & .footerSection {
+//         margin-left: 217px;
+//         background: #0D131C;
+//         margin-top: 78px;
+//         & .footer {
+//             padding: 45.65px 62.81px 0px 99.71px;
+//         }
+//     }
+// }
+// @include media-breakpoint-down(xxl) {
+//     .main{
+//         & .mainContaint {
+//             padding: 45px 62px 0px 62px;
+//         }
+//         & .footerSection {
+//             margin-top: 75px;
+//             & .helpSection, & .footerLinks, & .accordionFooter {
+//                 padding: 45px 62px 0px 62px;
+//             }
+//         }
+//     }
+// } 
+// @include media-breakpoint-down(xl) {
+//     .sidebar{
+//         display: none;
+//     }
+//     .main{
+//         & .mainContaint {
+//             margin-left: 0px;
+//             padding: 42px 55px 0px 55px;
+//             &.vipclubMain {
+//                 padding: 0 60px 0 35px;
+//             }
+//             &.PromotionPage {
+//                 padding: 0 70px 0 70px;
+//             }
+//         }
+//         & .footerSection {
+//             margin-left: 0px;
+//             margin-top: 75px;
+//             & .helpSection, & .footerLinks, & .accordionFooter {
+//                 padding: 42px 55px 0px 55px;
+//             }
+//         }
+//     }
+// } 
+
+// @include media-breakpoint-down(lg) {
+//     // .sidebar{
+//     //     display: none;
+//     // }
+//     .main{
+//         & .mainContaint {
+//             // margin-top: 50px;
+//             padding: 40px 50px 0px 50px;
+//             &.vipclubMain {
+//                 padding: 0 30px 0 25px;
+//             }
+//             &.PromotionPage {
+//                 padding: 0 30px 0 30px;
+//             }
+//         }
+//         & .footerSection {
+//             margin-top: 60px;
+//             & .helpSection, & .footerLinks, & .accordionFooter {
+//                 padding: 40px 50px 0px 50px;
+//             }
+//         }
+//     }
+// } 
+
+// @include media-breakpoint-down(sm) {
+//     // .sidebar{
+//     //     display: none;
+//     // }
+//     .main{
+//         & .mainContaint {
+//             // margin-top: px;
+//             padding: 30px 25px 0px 25px;
+//             &.vipclubMain {
+//                 padding: 0 10px 0 10px;
+//             }
+//             &.PromotionPage {
+//                 padding: 0 22px 0 21px;
+//             }
+//         }
+//         & .footerSection {
+//             margin-top: 40px;
+//             & .helpSection, & .footerLinks, & .accordionFooter {
+//                 padding: 30px 25px 0px 25px;
+//             }
+//         }
+//     }
+// } 
+
+
+.navbar {
+    z-index: 100;
+    background: #161F2C;
+    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.25);
+    height: 60px;
+    & .navbar-brand {
+        height: 40px;
+    }
+}
+
+.sidebar{
+    top: 60px;
+    left: 0;
+    bottom: 0;
+    width: 217.286px;
+    z-index: 50;
+    transition: all 0.3s;
+    padding: 20px;
+    overflow-y: auto;
+    box-shadow: 0px 0px 20px rgb(1 41 112 / 10%);
+    background: #161F2C;
+}
+
+.main{
+    & .mainContaint {
+        margin-left: 217.286px;
+        margin-top: 60px;
+        padding: 10px;
+        & .homepage{
+            padding: 40.65px 52.81px 0px 89.71px;
+        }
+        transition: all 0.3s;                                                                                                                                                      
+        & .affiliatePage{
+            padding: 76px 21px 0px 21px;
+        }
+        &.afflitiateDashboard{
+            padding: 35px 39px 87px 35px !important;
+        }
+    }
+    
+    & .footerSection {
+        margin-left: 217px;
+        background: #0D131C;
+        margin-top: 78px;
+        & .footer {
+            padding: 45.65px 62.81px 0px 99.71px;
+        }
+    }
+}
+@include media-breakpoint-down(xxl) {
+    .main{
+        & .mainContaint {
+            & .homepage{
+                padding: 40px 52px 0px 52px;
+            }
+            & .affiliatePage{
+                padding: 65px 21px 0px 21px;
+            }
+        }
+        & .footerSection {
+            margin-top: 75px;
+            & .helpSection, & .footerLinks, & .accordionFooter {
+                padding: 45px 62px 0px 62px;
+            }
+        }
+    }
+} 
+@include media-breakpoint-down(xl) {
+    body{
+        &.asideBar{
+            & .sidebar{
+                transform: translateX(0px);
+            }
+            & .menuBtn {
+                & .closeicon {
+                    opacity: 1;
+                    visibility: visible;
+                }
+                & .menuicon {
+                    opacity: 0;
+                    visibility: hidden;
+                }
+            }
+        }
+    }
+    .sidebar{
+        transform: translateX(-100%);
+        z-index: 101;
+        top: 0;
+    }
+    .main{
+        & .mainContaint {
+            margin-left: 0px;
+            & .homepage{
+                padding: 37px 52px 0px 52px;
+            }
+            & .affiliatePage{
+                padding: 50px 21px 50px 21px;
+            }
+        }
+        & .footerSection {
+            margin-left: 0px;
+            margin-top: 75px;
+            & .helpSection, & .footerLinks, & .accordionFooter {
+                padding: 42px 55px 0px 55px;
+            }
+        }
+    }
+} 
+
+@include media-breakpoint-down(lg) {
+    .main{
+        & .mainContaint {
+            & .homepage{
+                padding: 35px 47px 0px 47px;
+            }
+            
+        }
+        & .footerSection {
+            margin-top: 60px;
+            & .helpSection, & .footerLinks, & .accordionFooter {
+                padding: 40px 50px 0px 50px;
+            }
+        }
+    }
+} 
+
+@include media-breakpoint-down(sm) {
+    // .sidebar{
+    //     display: none;
+    // }
+    .main{
+        & .mainContaint {
+            // margin-top: px;
+            & .homepage{
+                padding: 25px 15px 0px 15px;
+            }
+        }
+        & .footerSection {
+            margin-top: 40px;
+            & .helpSection, & .footerLinks, & .accordionFooter {
+                padding: 30px 25px 0px 25px;
+            }
+        }
+    }
+} 

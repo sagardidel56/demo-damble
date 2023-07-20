@@ -1,0 +1,577 @@
+@import './../../index.scss';
+
+body {
+    background-color: #0D131C !important;
+}
+
+.lp-heroSection {
+    padding-top: 65px;
+
+    & .sectionInner {
+        border-radius: 50px;
+        position: relative;
+        padding: 4px;
+        overflow: hidden;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            inset: 0;
+            background: linear-gradient(170deg, #5578FE 30%, #0D131C 50%);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            filter: blur(30px);
+        }
+
+
+        & .mainOuter {
+            background: #0D131C;
+            position: relative;
+            z-index: 1;
+            border-radius: 46px;
+
+            &::before {
+                content: '';
+                width: 100%;
+                ;
+                height: 100%;
+                position: absolute;
+                background-image: url('../../assets/picture/hero-shadow.svg');
+                background-repeat: no-repeat;
+                background-position: top center;
+                background-size: 800px;
+                inset: 0;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 200%;
+                height: 90px;
+                // height: 10vw;
+                top: 100;
+                inset: 0;
+                // background-color: #6324D7;
+                // background-color: linear-gradient(170deg, #6324D7 30%, #306fcd 50%);
+                background: linear-gradient(45deg, #2e1163 30%, #6324D7 50%);
+                transform: translateY(200px) translateX(-100px) rotate(345deg);
+                // transform: rotate(345deg);
+                opacity: 0.9;
+                z-index: 0;
+            }
+
+            & .main {
+                border-radius: 46px;
+                overflow: hidden;
+                padding: 40px 20px;
+                background-image: url('../../assets/picture/hero-vector.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                position: relative;
+                z-index: 1;
+
+
+
+                // backdrop-filter: blur(5px);
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    inset: 0;
+                    background: rgba(#0D131C, 0.4);
+                    z-index: -1;
+                }
+
+                & .secHeading {
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 800;
+                    font-size: 64px;
+                    line-height: 78px;
+                    text-align: center;
+                    font-variant: all-small-caps;
+                    color: #FFFFFF;
+
+                    & b {
+                        color: #FFD700;
+                    }
+                }
+
+                & .secSubHeading {
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 40px;
+                    line-height: 49px;
+                    text-align: center;
+                    font-variant: all-small-caps;
+                    color: #FFFFFF;
+                    margin-bottom: 23px;
+
+                    & b {
+                        color: #FFD700;
+                    }
+                }
+
+                & .secText {
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 17px;
+                    line-height: 21px;
+                    text-align: center;
+                    font-variant: all-small-caps;
+                    color: #FFFFFF;
+                    max-width: 683px;
+                }
+
+                & .heroImg {
+                    margin: 68px auto auto auto;
+                    max-width: 468px;
+                }
+
+                & .TextBox {
+                    margin-top: -100px;
+
+                    & .boxSubHeading {
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 800;
+                        font-size: 30px;
+                        line-height: 37px;
+                        text-align: center;
+                        color: #FFFFFF;
+
+                        & b {
+                            color: #81B823;
+                        }
+                    }
+
+                    & .boxHeading {
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 900;
+                        font-size: 90px;
+                        line-height: 110px;
+                        text-align: center;
+                        text-transform: uppercase;
+                        color: #FFFFFF;
+
+                        & b {
+                            color: #81B823;
+                        }
+                    }
+                }
+
+                & .heroBtn {
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 29px;
+                    text-align: center;
+                    font-variant: all-small-caps;
+                    color: #FFFFFF;
+                    padding: 14px 25px;
+                    background-color: #00990A;
+                    border-radius: 8px;
+                    border: none;
+                    box-shadow: none;
+                    margin: auto;
+
+                    &:hover {
+                        background-color: darken(#00990A, 5);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint(basic) {}
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+
+@include media-breakpoint-down(xxl) {
+    .lp-heroSection {
+        & .sectionInner {
+            &::before {}
+
+            & .mainOuter {
+                &::before {}
+
+                & .main {
+                    &::before {}
+
+                    & .secHeading {
+                        font-size: 60px;
+
+                        & b {}
+                    }
+
+                    & .secSubHeading {
+                        & b {}
+                    }
+
+                    & .secText {}
+
+                    & .heroImg {}
+
+                    & .TextBox {
+                        & .boxSubHeading {
+                            & b {}
+                        }
+
+                        & .boxHeading {
+                            font-size: 80px;
+
+                            & b {}
+                        }
+                    }
+
+                    & .heroBtn {
+                        &:hover {}
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(xl) {
+    .lp-heroSection {
+        & .sectionInner {
+            &::before {}
+
+            & .mainOuter {
+                &::before {}
+
+                & .main {
+                    &::before {}
+
+                    & .secHeading {
+                        font-size: 50px;
+
+                        & b {}
+                    }
+
+                    & .secSubHeading {
+                        & b {}
+                    }
+
+                    & .secText {}
+
+                    & .heroImg {
+                        max-width: 440px;
+                    }
+
+                    & .TextBox {
+                        margin-top: -70px;
+
+                        & .boxSubHeading {
+                            font-size: 25px;
+
+                            & b {}
+                        }
+
+                        & .boxHeading {
+                            font-size: 70px;
+
+                            & b {}
+                        }
+                    }
+
+                    & .heroBtn {
+                        font-size: 23px;
+                        line-height: 27px;
+                        padding: 12px 25px;
+
+                        &:hover {}
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .lp-heroSection {
+        & .sectionInner {
+            &::before {}
+
+            & .mainOuter {
+                &::before {}
+
+                &::after {
+                    content: "";
+                    height: 75px !important;
+                    background: linear-gradient(45deg, #3d1784 30%, #6324D7 50%);
+                }
+
+
+                & .main {
+                    &::before {}
+
+                    & .secHeading {
+                        font-size: 42px;
+                        line-height: 55px;
+
+                        & b {}
+                    }
+
+                    & .secSubHeading {
+                        font-size: 32px;
+                        line-height: 40px;
+
+                        & b {}
+                    }
+
+                    & .secText {}
+
+                    & .heroImg {
+                        max-width: 400px;
+                        margin: 45px auto auto auto;
+                    }
+
+                    & .TextBox {
+                        margin-top: -60px;
+
+                        & .boxSubHeading {
+                            font-size: 20px;
+                            line-height: 30px;
+
+                            & b {}
+                        }
+
+                        & .boxHeading {
+                            font-size: 60px;
+                            line-height: 80px;
+
+                            & b {}
+                        }
+                    }
+
+                    & .heroBtn {
+                        font-size: 22px;
+                        line-height: 25px;
+                        padding: 10px 20px;
+
+                        &:hover {}
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .lp-heroSection {
+        padding-top: 40px;
+
+        & .sectionInner {
+            &::before {}
+
+            & .mainOuter {
+                &::before {}
+
+                &::after {
+                    content: "";
+                    height: 60px !important;
+                }
+
+                & .main {
+                    padding: 35px 30px;
+
+                    &::before {}
+
+                    & .secHeading {
+                        font-size: 35px;
+                        line-height: 45px;
+
+                        & b {}
+                    }
+
+                    & .secSubHeading {
+                        font-size: 24px;
+                        line-height: 28px;
+
+                        & b {}
+                    }
+
+                    & .secText {
+                        font-size: 13px;
+                        line-height: 16px;
+                    }
+
+                    & .heroImg {
+                        max-width: 330px;
+                        margin: 40px auto auto auto
+                    }
+
+                    & .TextBox {
+                        margin-top: -50px;
+
+                        & .boxSubHeading {
+                            font-size: 16px;
+                            line-height: 20px;
+
+                            & b {}
+                        }
+
+                        & .boxHeading {
+                            font-size: 50px;
+                            line-height: 65px;
+
+                            & b {}
+                        }
+                    }
+
+                    & .heroBtn {
+                        font-size: 20px;
+                        line-height: 22px;
+                        padding: 10px 20px;
+
+                        &:hover {}
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .lp-heroSection {
+        padding-top: 25px;
+
+        & .sectionInner {
+            &::before {}
+
+            & .mainOuter {
+                &::before {}
+
+                &::after {
+                    content: "";
+                    height: 40px !important;
+                }
+
+                & .main {
+                    padding: 30px 13px;
+
+                    &::before {}
+
+                    & .secHeading {
+                        max-width: 344px;
+                        font-size: 30px;
+                        line-height: 37px;
+
+                        & b {}
+                    }
+
+                    & .secSubHeading {
+                        font-size: 15px;
+                        line-height: 18px;
+                        margin-bottom: 15px;
+
+                        & b {}
+                    }
+
+                    & .secText {
+                        font-size: 11px;
+                        line-height: 13px;
+                        max-width: 317px;
+                        padding: 0;
+                    }
+
+                    & .heroImg {
+                        max-width: 248px;
+                        margin: 27px auto auto auto
+                    }
+
+                    & .TextBox {
+                        margin-top: -50px;
+
+                        & .boxSubHeading {
+                            font-size: 13px;
+                            line-height: 16px;
+
+                            & b {}
+                        }
+
+                        & .boxHeading {
+                            font-size: 45px;
+                            line-height: 55px;
+
+                            & b {}
+                        }
+                    }
+
+                    & .heroBtn {
+                        font-size: 18px;
+                        line-height: 22px;
+                        padding: 9.8px 11.7px;
+
+                        &:hover {}
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:429.99px) {
+    .lp-heroSection {
+        & .sectionInner {
+            &::before {}
+
+            & .mainOuter {
+                &::before {}
+
+                & .main {
+                    &::before {}
+
+                    & .secHeading {
+                        & b {}
+                    }
+
+                    & .secSubHeading {
+                        & b {}
+                    }
+
+                    & .secText {
+                        padding: 0px 8px;
+                    }
+
+                    & .heroImg {}
+
+                    & .TextBox {
+                        & .boxSubHeading {
+                            & b {}
+                        }
+
+                        & .boxHeading {
+                            font-size: 36px;
+                            line-height: 45px;
+
+                            & b {}
+                        }
+                    }
+
+                    & .heroBtn {
+                        &:hover {}
+                    }
+                }
+            }
+        }
+    }
+}

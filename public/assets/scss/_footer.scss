@@ -1,0 +1,831 @@
+// .mainFooter {
+//     & .borderd {
+//         border-top: 1px solid #00990A;
+//         &.smBorderd {
+//         border-top: 0.5px solid #00990A !important;
+//         }
+//     }
+//     & .paymentHeading {
+//         font-size: 40px;
+//         font-weight: 800;
+//         line-height: 49px;
+//     }
+//     & .card {
+//         background: #131B27;
+//         & .card-body {
+//             border-color: #898E93!important;
+//             & .logos{
+//                 width: 100%;
+//                 height: 100%;
+//                 display: flex;
+//                 align-items: center;
+//                 justify-content: center;
+//                 & img {
+//                     height: 100%;
+//                 }
+//             }
+//         }
+//         &.cardLogo{
+//             border-radius: 23px;
+//             & .card-body {
+//                 & .logos {
+//                     max-height: 45px;
+//                 }
+//             }
+//         }
+//         &.cryptoLogo {
+//             border-radius: 9px;
+//             & .card-body {
+//                 & .logos {
+//                     max-height: 45px;
+//                     max-width: 45px;
+//                 }
+//                 & .ragisterbonus {
+//                     font-size: 20px;
+//                     line-height: 24px;
+//                     font-weight: 700;
+//                     & span {
+//                         color: #FFD700;
+//                     }
+//                 }
+//                 & .ragisterBtn {
+//                     background-color: #00990A;
+//                     border-radius: 7px;
+//                     height: 39px;
+//                     font-weight: 700;
+//                     font-size: 12px;
+//                     line-height: 15px;
+//                     transition: all ease-in-out 0.3s;
+//                     &:hover{
+//                         background-color: darken(#00990A, 5);
+//                     }
+//                 }
+//             }
+//         }
+//         &.bardcard {
+//             border-radius: 15px;
+//             & .card-body {
+//                 & .logos {
+//                     max-height: 50px;
+//                 }
+//             }
+//         }
+//     }
+//     & .navContent {
+//         & .navLink {
+//             font-size: 20px;
+//             line-height: 24px;
+//             transition: all 0.3s ease-in-out;
+//             &:hover{
+//                 color: darken(#fff, 15) !important;
+//                 cursor: pointer;
+//             }
+//         }
+//     }
+//     & .democontent {
+//         font-size: 18px;
+//         line-height: 22px;
+//     }
+//     & .logoImg  {
+//         height: 35px;
+//         & img {
+//             height: 100%;
+//         }
+//     }
+//     & .copyright {
+//         font-weight: 400;
+//         font-size: 17px;
+//         line-height: 21px;
+//     }
+// }
+
+.footerrSection {
+    padding-bottom: 120px;
+    & .borderd {
+        border-top: 1px solid #00990A;
+        &.smBorderd {
+        border-top: 0.5px solid #00990A !important;
+        }
+    }
+    & .paymentHeading {
+        font-size: 40px;
+        font-weight: 800;
+        line-height: 49px;
+    }
+    & .card {
+        border-radius: 23px;
+        border: 1px solid #FFF;
+        background: linear-gradient(90deg, rgba(22, 31, 44, 0.70) 0%, rgba(22, 31, 44, 0.70) 82.29%);
+        & .card-body {
+            border-radius: 15px;
+            border: 1px solid #ffffff59;
+            & .logos{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                & img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+        &.cardLogo{
+            border-radius: 23px;
+            & .card-body {
+                & .logos {
+                    height: 45px;
+                }
+            }
+        }
+        &.cryptoLogo {
+            border-radius: 9px;
+            & .card-body {
+                & .logos {
+                    height: 45px;
+                    // max-width: 45px;
+                }
+                & .ragisterbonus {
+                    font-size: 20px;
+                    line-height: 24px;
+                    font-weight: 700;
+                    & span {
+                        color: #FFD700;
+                    }
+                }
+                & .ragisterBtn {
+                    background-color: #00990A;
+                    border-radius: 7px;
+                    height: 39px;
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 15px;
+                    transition: all ease-in-out 0.3s;
+                    &:hover{
+                        background-color: darken(#00990A, 5);
+                    }
+                    &.ragisterBtn1 {
+                        background-color: #713FE3;
+                        &:hover {
+                            background: darken(#713FE3, 5);
+                        }
+                    }
+                }
+            }
+        }
+        &.bardcard {
+            border-radius: 15px;
+            & .card-body {
+                & .logos {
+                    height: 50px;
+                    & img {
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+    }
+    & .navContent {
+        & .navLink {
+            font-size: 20px;
+            line-height: 24px;
+            transition: all 0.3s ease-in-out;
+            &:hover{
+                color: darken(#fff, 15) !important;
+                cursor: pointer;
+            }
+        }
+    }
+    & .democontent {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    & .logoImg  {
+        height: 35px;
+        & img {
+            height: 100%;
+        }
+    }
+    & .copyright {
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 21px;
+    }
+}
+
+.footerLinks{
+    margin-top: 125px;
+    background: #161F2C;
+    & .linksUl{
+        & .linkLiHead{
+            color: #FFF;
+            font-family: 'Montserrat';
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin-bottom: 41px;
+        }
+        & .linkLi{
+            color: #93ACD3;
+            font-family: 'Montserrat';
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            margin-bottom:10px;
+            display: inline-flex;
+        }
+    }
+}
+
+.givewayContainer{
+    background-color: #0F121F;
+    & .givway{
+        width: 100%;
+        height: auto;
+        & img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    & .ii{
+        height: auto;
+        & img{
+            width: 100%;
+            height: 100%;
+        }
+        & .txt{
+            font-family: 'Montserrat';
+            font-size: 19px;
+            color: white;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 20px;
+            & span{
+                color: #FF7518;
+                display: block;
+                // margin-bottom: 5px;
+            &.yellow{
+                color: #FFD700;
+            }
+            &.green{
+                color: #00990A;
+            }
+            }
+        }
+    }
+}
+
+.bottomBarFluid{
+    & .bottomBar{
+        background: #161F2C;
+        box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.50);
+        // height: 101px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 5;
+        & .blurBg{
+            position: relative;
+            background-color: #161F2C;
+            &::after{
+                content: '';
+                background-image: url(./../img/givewayImg/blurBg.png);
+                position: absolute;
+                // top: -60px;
+                top: -54px;
+                width: 100px;
+                height: 100px;
+                z-index: -20;
+            }
+            &::before{
+                content: '';
+                background-color:#161F2C ;
+                position: absolute;
+                // top: -17px;
+                // width: 100px;
+                // height: 100px;
+                top: -10px;
+                height: 95px;
+                width: 95px;
+                z-index: -2;
+            }
+        }
+        // padding-bottom: 101px;
+        & .bottomAnchor{
+            // padding: 10px 10px 28px 10px;
+            padding: 15px 10px 15px 10px;
+            display: block;
+            text-decoration: none;
+            transition: all ease-in-out 0.3s;
+            opacity: 0.7;
+            &:hover{
+                opacity: 1;
+            }
+            &.active{
+                opacity: 1;
+            }
+            &.bottomAnchorMain{
+                // margin-top: -47px;
+                margin-top: -46px;
+                padding-bottom: 12px;
+                & .iconParent{
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    background: radial-gradient(75.00% 75.00% at 50.00% 25.00%, #00990A 0%, rgba(21, 50, 97, 0.00) 100%);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    & img{
+                        width: 30px;
+                        height: 28.798px;
+                    }
+                }
+                
+        & .linkTxt{
+            color: #FFF;
+            font-family: 'Montserrat';
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-align: center;
+        }
+            }
+            & .iconParent{
+                width: 23px;
+                height: 23px;
+                margin: auto;
+                & img{
+                    object-fit: contain;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            & .linkTxt{
+                margin-top: 9px;
+                color: #B4B4B4;
+                font-family: 'Montserrat';
+                font-size: 10px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                text-decoration: none !important;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@include media-breakpoint(basic) {
+}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {
+}
+
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {
+    .footerrSection {
+        & .borderd {
+            &.smBorderd {
+            }
+        }
+        & .paymentHeading {
+        }
+        & .card {
+            & .card-body {
+                & .logos{
+                    & img {
+                    }
+                }
+            }
+            &.cardLogo{
+                & .card-body {
+                    & .logos {
+                        // max-height: 36px;
+                        // max-width: 36px;
+                    }
+                }
+            }
+            &.cryptoLogo {
+                & .card-body {
+                    & .logos {
+                        height: 40px;
+                        width: 40px;
+                    }
+                    & .ragisterbonus {
+                        & span {
+                        }
+                    }
+                    & .ragisterBtn {
+                        &:hover{
+                        }
+                    }
+                }
+            }
+            &.bardcard {
+                & .card-body {
+                    & .logos {
+                    }
+                }
+            }
+        }
+        & .navContent {
+            & .navLink {
+                &:hover{
+                }
+            }
+        }
+        & .democontent {
+        }
+        & .logoImg  {
+        }
+        & .copyright {
+        }
+    }
+    .footerLinks {
+        margin-top: 100px;
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .footerrSection {
+        & .borderd {
+            &.smBorderd {
+            }
+        }
+        & .paymentHeading {
+            font-size: 32px;
+            line-height: 40px;
+        }
+        & .card {
+            & .card-body {
+                & .logos{
+                    & img {
+                    }
+                }
+            }
+            &.cardLogo{
+                & .card-body {
+                    & .logos {
+                        height: 40px;
+                        width: 20px;
+                    }
+                }
+            }
+            &.cryptoLogo {
+                & .card-body {
+                    & .logos {
+                        height: 40px;
+                        width: 40px;
+                    }
+                    & .ragisterbonus {
+                        font-size: 16px;
+                        line-height: 20px;
+                        & span {
+                        }
+                    }
+                    & .ragisterBtn {
+                        height: 35px;
+                        // font-size: 12px;
+                        // line-height: 15px;
+                        &:hover{
+                        }
+                    }
+                }
+            }
+            &.bardcard {
+                & .card-body {
+                    & .logos {
+                        height: 35px;
+                    }
+                }
+            }
+        }
+        & .navContent {
+            & .navLink {
+                font-size: 14px;
+                line-height: 18px;
+                &:hover{
+                }
+            }
+        }
+        & .democontent {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        & .logoImg  {
+            height: 25px;
+        }
+        & .copyright {
+            font-size: 13px;
+            line-height: 18px;
+        }
+    }
+    .footerLinks {
+        margin-top: 80px;
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .footerrSection {
+        & .borderd {
+            &.smBorderd {
+            }
+        }
+        & .paymentHeading {
+            font-size: 28px;
+            line-height: 35px;
+        }
+        & .card {
+            & .card-body {
+                & .logos{
+                    & img {
+                    }
+                }
+            }
+            &.cardLogo{
+                border-radius: 5px;
+                & .card-body {
+                    & .logos {
+                        height: 35px;
+                    }
+                }
+            }
+            &.cryptoLogo {
+                & .card-body {
+                    & .logos {
+                        height: 39px;
+                        width: 39px;
+                    }
+                    & .ragisterbonus {
+                        font-size: 14px;
+                        line-height: 18px;
+                        & span {
+                        }
+                    }
+                    & .ragisterBtn {
+                        height: 30px;
+                        font-size: 10px;
+                        line-height: 14px;
+                        &:hover{
+                        }
+                    }
+                }
+            }
+            &.bardcard {
+                border-radius: 5px;
+                & .card-body {
+                    & .logos {
+                        height: 32px;
+                        & img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        & .navContent {
+            & .navLink {
+                font-size: 12px;
+                line-height: 14px;
+                &:hover{
+                }
+            }
+        }
+        & .democontent {
+            font-size: 12px;
+            line-height: 16px;
+        }
+        & .logoImg  {
+            height: 18px;
+        }
+        & .copyright {
+            font-size: 12px;
+            line-height: 16px;
+        }
+    } 
+    .footerLinks {
+        margin-top: 60px;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .footerrSection {
+        & .borderd {
+            &.smBorderd {
+            }
+        }
+        & .paymentHeading {
+            font-size: 23px;
+            line-height: 28px;
+        }
+        & .card {
+            & .card-body {
+                & .logos{
+                    & img {
+                    }
+                }
+            }
+            &.cardLogo{
+                & .card-body {
+                    & .logos {
+                        height: 30px;
+                    }
+                }
+            }
+            &.cryptoLogo {
+                & .card-body {
+                    & .logos {
+                    }
+                    & .ragisterbonus {
+                        & span {
+                        }
+                    }
+                    & .ragisterBtn {
+                        font-size: 10px;
+                        &:hover{
+                        }
+                    }
+                }
+            }
+            &.bardcard {
+                & .card-body {
+                    & .logos {
+                        height: 30px;
+                        & img {
+                        }
+                    }
+                }
+            }
+        }
+        & .navContent {
+            & .navLink {
+                font-size: 10px;
+                line-height: 12px;
+                &:hover{
+                }
+            }
+        }
+        & .democontent {
+            font-size: 8px;
+            line-height: 10px;
+        }
+        & .logoImg  {
+            height: 13px;
+        }
+        & .copyright {
+            font-size: 8px;
+            line-height: 10px;
+        }
+    }
+    .footerLinks {
+        margin-top: 50px;
+    }
+}
+
+
+// * mobile View Accordion footer
+.footerSection{
+    & .accordionFooter{
+        & .accordion{
+            border-radius: 6px !important;
+            background: #161F2C;
+            & .accordion-item{
+                padding: 14px 9px 3px 9px;
+                border-radius: 5px;
+                background-color: transparent !important;
+
+                & .accordion-header{
+                    & .accordion-button{
+                        height: 23px;
+                        color: #E1E1E1 !important;
+                        font-family: Montserrat;
+                        font-size: 13px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                        border-radius: 5px;
+                        background-color:rgba(#455264, 0.2);
+                        z-index: 1;
+                        &:not(.collapsed)::after{
+                            background-image: url(../img/left-arrow.png);
+                            width: 11px;
+                            height: 10px;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            // transform:rotate(180deg);
+                        }
+                        &::after{
+                            background-image: url(../img/left-arrow.png);
+                            height: 10px;
+                            width: 11px;
+                            background-position: center !important;
+                            background-repeat: no-repeat !important;
+                            background-size: cover !important;
+                        }
+                    }
+                }
+                & .accordionCollapse {
+
+                    & .accordion-body{
+                        & .linksUl{
+                            & li{
+                                & .linkLi{  
+                                    color: #93ACD3;
+                                    font-family: Montserrat;
+                                    font-size: 10px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: normal;
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .footerrSection {
+        & .borderd {
+            &.smBorderd {
+            }
+        }
+        & .paymentHeading {
+        }
+        & .card {
+            & .card-body {
+                & .logos{
+                    & img {
+                    }
+                }
+            }
+            &.cardLogo{
+                & .card-body {
+                    & .logos {
+                    }
+                }
+            }
+            &.cryptoLogo {
+                & .card-body {
+                    & .logos {
+                    }
+                    & .ragisterbonus {
+                        & span {
+                        }
+                    }
+                    & .ragisterBtn {
+                        &:hover{
+                        }
+                    }
+                }
+            }
+            &.bardcard {
+                & .card-body {
+                    & .logos {
+                        & img {
+                        }
+                    }
+                }
+            }
+        }
+        & .navContent {
+            & .navLink {
+                font-size: 8px;
+                line-height: 10px;
+                &:hover{
+                }
+            }
+        }
+        & .democontent {
+        }
+        & .logoImg  {
+        }
+        & .copyright {
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.otp-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .otp-input {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid #ccc;
+    margin-right: 5px;
+  }
+  

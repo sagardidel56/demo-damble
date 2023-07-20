@@ -1,0 +1,330 @@
+@import './../../index.scss';
+
+
+
+
+@include media-breakpoint(basic) {
+    .lp-whyIsGamble {
+        padding-top: 104px;
+        & .whyIsGambleInner {
+            & .sectionHeading {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 60px;
+                line-height: 73px;
+                text-align: left;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                margin-bottom: 52.91px;
+            }
+            & .whyBox {
+                margin-bottom: 130px;
+                & .leftSide {
+                    & .boxHeading {
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 800;
+                        font-size: 27px;
+                        line-height: 33px;
+                        color: #FFD700;
+                        margin-bottom: 40px;
+                        max-width: 819.58px;
+                        padding: 0;
+                    }
+                    & .boxText {
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 23px;
+                        line-height: 28.04px;
+                        color: #FFFFFF;
+                        max-width: 819.58px;
+                        padding: 0;
+                    }
+                }
+                & .rightSide {
+                    & .whyGambleImg1 {
+                        max-width: 372.1px;
+                        width: 100%;
+                    }
+                    & .whyGambleImg2 {
+                        max-width: 439px;
+                        width: 100%;
+                    }
+                    & .whyGambleImg3 {
+                        max-width: 222px;
+                        width: 100%;
+                    }
+                    & .whyGambleImg4 {
+                        max-width: 334px;
+                        width: 100%;
+                    }
+                }
+                // &:last-child {
+                //     margin-bottom: 0;
+                // }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(sm) {
+}
+@include media-breakpoint-up(md) {
+}
+@include media-breakpoint-up(lg) {
+}
+@include media-breakpoint-up(xl) {
+}
+@include media-breakpoint-up(xxl) {
+}
+
+
+@include media-breakpoint-down(xxl) {
+    .lp-whyIsGamble {
+        padding-top: 90px;
+        & .whyIsGambleInner {
+            & .sectionHeading {
+                font-size: 55px;
+                line-height: 70px;
+                margin-bottom: 49.91px;            
+            }
+            & .whyBox {
+                margin-bottom: 130px;
+                & .leftSide {
+                    & .boxHeading {
+                        font-size: 26px;
+                        line-height: 32px;
+                        margin-bottom: 35px;
+                        max-width: 700px;
+                    }
+                    & .boxText {
+                        font-size: 22px;
+                        line-height: 27.04px;
+                        max-width: 700px;
+                    }
+                }
+                & .rightSide {
+                    & .whyGambleImg1 {
+                        max-width: 365.1px;
+                    }
+                    & .whyGambleImg2 {
+                        max-width: 429px;
+                    }
+                    & .whyGambleImg3 {
+                        max-width: 202px;
+                    }
+                    & .whyGambleImg4 {
+                        max-width: 314px;
+                    }
+                }
+                &:last-child {
+                }
+            }
+        }
+    }
+}
+@include media-breakpoint-down(xl) {
+    .lp-whyIsGamble {
+        padding-top: 90px;
+        & .whyIsGambleInner {
+            & .sectionHeading {
+                font-size: 48px;
+                line-height: 40px;
+                margin-bottom: 40px;           
+            }
+            & .whyBox {
+                margin-bottom: 50px;
+                & .leftSide {
+                    & .boxHeading {
+                        font-size: 22px;
+                        line-height: 28px;
+                        margin-bottom: 30px;
+                        max-width: 600px;
+                    }
+                    & .boxText {
+                        font-size: 20px;
+                        line-height: 25.04px;
+                        max-width: 600px;
+                    }
+                }
+                & .rightSide {
+                    & .whyGambleImg1 {
+                        max-width: 290px;
+                    }
+                    & .whyGambleImg2 {
+                        max-width: 290px;
+                    }
+                    & .whyGambleImg3 {
+                        max-width: 202px;
+                    }
+                    & .whyGambleImg4 {
+                        max-width: 290px;
+                    }
+                }
+                &:last-child {
+                }
+            }
+        }
+    }
+}
+@include media-breakpoint-down(lg) {
+    .lp-whyIsGamble {
+        padding-top: 60px;
+        & .whyIsGambleInner {
+            & .sectionHeading {
+                text-align: center;
+                font-size: 43px;
+                line-height: 30px;
+                margin-bottom: 30px;           
+            }
+            & .whyBox {
+                margin-bottom: 50px;
+                & .leftSide {
+                    & .boxHeading {
+                        font-size: 16px;
+                        line-height: 24px;
+                        margin-bottom: 20px;
+                        max-width: 400px;
+                    }
+                    & .boxText {
+                        font-size: 15px;
+                        line-height: 22px;
+                        max-width: 400px;
+                    }
+                }
+                & .rightSide {
+                    & .whyGambleImg1 {
+                        max-width: 250px;
+                    }
+                    & .whyGambleImg2 {
+                        max-width: 250px;
+                    }
+                    & .whyGambleImg3 {
+                        max-width: 180px;
+                    }
+                    & .whyGambleImg4 {
+                        max-width: 250px;
+                    }
+                }
+                &:last-child {
+                }
+            }
+        }
+    }
+}
+@include media-breakpoint-down(md) {
+    .lp-whyIsGamble {
+        padding-top: 60px;
+        & .whyIsGambleInner {
+            & .sectionHeading {
+                text-align: center;
+                font-size: 30px;
+                line-height: 30px;
+                margin-bottom: 30px;           
+            }
+            & .whyBox {
+                margin-bottom: 40px;
+                & .leftSide {
+                    & .boxHeading {
+                        text-align: center;
+                        font-size: 16px;
+                        line-height: 24px;
+                        margin-bottom: 20px;
+                        max-width: 400px;
+                        margin: auto;
+                    }
+                    & .boxText {
+                        text-align: center;
+                        font-size: 15px;
+                        line-height: 22px;
+                        max-width: 400px;
+                        margin: auto;
+                    }
+                }
+                & .rightSide {
+                    margin-top: 40px;
+                    display: flex;
+                    & img {
+                        margin: auto;
+                        padding-bottom: 25px;
+                        border-bottom: 0.5px solid #00990A;
+                    }
+                    & .whyGambleImg1 {
+                        max-width: 250px;
+                    }
+                    & .whyGambleImg2 {
+                        max-width: 250px;
+                    }
+                    & .whyGambleImg3 {
+                        max-width: 180px;
+                    }
+                    & .whyGambleImg4 {
+                        max-width: 250px;
+                    }
+                }
+                &:last-child {
+                    & .rightSide {
+                        & img {
+                            border: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@include media-breakpoint-down(sm) {
+    .lp-whyIsGamble {
+        padding-top: 47.5px;
+        & .whyIsGambleInner {
+            & .sectionHeading {
+                text-align: center;
+                font-size: 23px;
+                line-height: 30px;
+                margin-bottom: 37.3px;           
+            }
+            & .whyBox {
+                margin-bottom: 40px;
+                & .leftSide {
+                    & .boxHeading {
+                        text-align: center;
+                        font-size: 14px;
+                        line-height: 17px;
+                        margin-bottom: 16px;
+                        max-width: 374.32px;
+                        margin: auto;
+                    }
+                    & .boxText {
+                        text-align: center;
+                        font-size: 13px;
+                        line-height: 16px;
+                        max-width: 374.32px;
+                        margin: auto;
+                    }
+                }
+                & .rightSide {
+                    margin-top: 40px;
+                    & img {
+                        margin: auto;
+                    }
+                    & .whyGambleImg1 {
+                        max-width: 250px;
+                    }
+                    & .whyGambleImg2 {
+                        max-width: 250px;
+                    }
+                    & .whyGambleImg3 {
+                        max-width: 180px;
+                    }
+                    & .whyGambleImg4 {
+                        max-width: 250px;
+                    }
+                }
+                &:last-child {
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,4311 @@
+// all section paddding 
+.vipclubMain {
+    padding: 0 71px 0 43px;
+}
+.PromotionPage {
+    padding: 0 85px 0 107px;
+}
+
+// topratedgames-tab-main start
+.topratedgames-tab-main {
+    border-radius: 10px;
+    // background: #161F2C;
+    padding: 0.7px;
+    &::before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        filter: blur(0.5px);
+        // background: linear-gradient(90deg, rgba(85,120,254,1) 42%, rgba(0,153,10,1) 63%);
+        background: linear-gradient(90deg, rgb(85 120 254 / 36%) 42%, rgb(0 153 10 / 54%) 63%);
+        top: 0;
+        left: 0;
+        z-index: -5;
+        border-radius: 10px;
+    }
+    & .topratedgames-tab-content {
+        border-radius: 10px;
+        background: #161F2C;
+        & .nav-tab {
+            padding: 13px 15px;
+            & .toprated-link {
+                font-size: 13px;
+                color: #93ACD3;
+                border-radius: 7px;
+                padding: 5px 12px;
+                transition: all 0.3s ease-in-out;
+                &:hover {
+                    color: $white;
+                    border-radius: 7px;
+                    border: 0.4px solid #56667F;
+                    background: #252E39;
+                }
+            }
+            & .toprated-link.active {
+                color: $white;
+                border-radius: 7px;
+                border: 0.4px solid #acadae91;
+                background: #252E39;
+            }
+        }
+        & .search-bar-group {
+            border: 1px solid #93ACD3;
+            opacity: 0.5;
+            & .search-input {
+                color: #93ACD3;
+                font-size: 12px;
+                &::placeholder {
+                    color: #93ACD3;
+                    font-size: 12px;
+                }
+            }
+        }
+    } 
+}
+// topratedgames-tab-main end
+
+// toprated-games-main section start
+.toprated-games-main {
+    // background-color: #161F2C;
+    padding: 0.7px;
+    margin-top: 41px;
+    border-radius: 18px;
+    &::before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(145deg, rgba(85, 120, 254, 0.4) 30%, rgba(22, 31, 44, 0.4) 50%);
+        top: 0;
+        left: 0;
+        z-index: -5;
+        border-radius: 18px;
+        filter: blur(0.5px);
+    }
+    & .toprated-games {
+        border-radius: 18px;
+        background-color: #161F2C;
+        padding: 22px 56px 28px 49px ;
+        z-index: 5;
+        & .heading {
+            font-size: 30px;
+            font-weight: 800;
+            color: $white;
+            line-height: normal;
+        }
+        & .shadowball {
+            &::before {
+                content: "";
+                position: absolute;
+                left: -23px;
+                top: 54%;
+                transform: translateY(-50%);
+                height: 22px;
+                width: 22px;
+                border-radius: 50%;
+                background: #04E929;
+                box-shadow: 0 0 50px #04E929;
+            }
+        }
+        & .viewallMain {
+            padding-right: 85px;
+            & .viewall-btn {
+                border-radius: 6px;
+                background: #161F2C;
+                color: #DFDFDF;
+            }
+        }
+        & .games-card-main {
+            padding-top: 30px;
+            & .mySwiper {
+                position: unset;
+                & .games-card {
+                    & .games-information {
+                        font-size: 8px;
+                        color: #93ACD3;
+                        padding-bottom: 7px;
+                        & .games-information-icon {
+                            height: 10px;
+                            width: 10px;
+                        }
+                    }
+                    & .games-img {
+                        & .games-img-tag {
+                            color: $white;
+                            border-radius: 0px 18px 0px 17px;
+                            background: #5578FE;
+                            box-shadow: 0px 0px 10px 0px #000;
+                            width: 37px;
+                            height: 17px;
+                            font-size: 8px;
+                        }
+                    }
+                    & .games-card-title {
+                        color: #93ACD3;
+                        font-size: 11px;
+                        padding: 14px 0;
+                        line-height: normal;
+                    }
+                    & .play-btn {
+                        // height: 39px;
+                        // width: 93px;
+                        padding: 10px 15px;
+                        background: #6324D7;
+                        font-size: 13px;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        & .tab-pane {
+            transition: all 0.3s ease-in-out;
+        }
+    }
+    & .swiper-button-next-unique {
+        border-radius: 8px;
+        position: absolute;
+        top: 0;
+        right: 15px;
+        background: #161f2c;
+        border-radius: 8px;
+    }
+    & .swiper-button-prev-unique {
+        border-radius: 8px;
+        position: absolute;
+        top: 0;
+        right: 45px;
+        background: #161f2c;
+        border-radius: 8px;
+    }
+}
+// toprated-games-main section end
+
+// recent-big-wins section start
+.recent-big-wins {
+    margin-top: 76px;
+    & .toprated-games {
+        border-radius: 18px;
+        background-color: #161F2C;
+        padding: 22px 0 28px 0 ;
+        z-index: 5;
+        & .games-card-main {
+            padding: 30px 56px 0 49px;
+        }
+    }
+}
+// recent-big-wins section end
+
+// help-us section start
+.help-us {
+    background: #131C27;
+    & .helpus-left {
+        & .help-us-heading {
+            font-size: 23px;
+            color: #fff;
+        }
+        & .help-us-para {
+            color: #93ACD3;
+            font-size: 11px;
+        }
+        & .help-us-paratwo {
+            padding-top: 30px;
+        }
+        & .showmore-btn-main {
+            padding-top: 28px;
+            & .showmore-btn {
+                color: #04E929;
+                font-size: 18px;
+            }
+        }
+    }
+    & .helpus-right {
+        padding-left: 28px;
+        &::before {
+            content: '';
+            top: 10%;
+            left: 0;
+            position: absolute;
+            background: rgba(147, 172, 211, 0.35);
+            transform: translateY(10%);
+            height: 80%;
+            width: 1px;
+
+        }
+        & .help-us-heading {
+            font-size: 23px;
+            color: #fff;
+        }
+        & .help-us-textarea {
+            padding-top: 37px;
+            padding-bottom: 12px;
+            & .text-area {
+                height: 98px;
+                background: #93abd336;
+                resize: none;
+                font-size: 11px;
+                border: none;
+                color: #C6C4C4;
+                padding: 9px 17px 9px 17px;
+                &::placeholder {
+                    color: #C6C4C4 !important;
+                    font-size: 11px;
+                    // padding: 9px 87px 0 17px;
+                }
+            }
+        }
+        & .textarea-title {
+            font-size: 8px;
+            padding-top: 6px;
+            color: #93ACD3;
+        }
+        & .leavemsg-btn {
+                font-size: 11px;
+                background-color: #00990A;
+                color: #fff;
+                padding: 6px 24px;
+        }
+        & .helpus-email-main {
+            padding-top: 12px;
+            color: #93ACD3;
+            font-size: 10px;
+            & .helpus-email {
+                color: #04E929;
+            }
+        }
+    }
+}
+// help-us section end
+
+// ********* Vip Club Page Start ********
+
+
+// ********* vipheroSection start ********
+.vipheroSection {
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -50px;
+        height: 100%;
+        width: 60%;
+        background-image: url(../Img/vipClub/herobgleft.png);
+        // background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: -1;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: -80px;
+        height: 100%;
+        width: 40%;
+        background-image: url(../Img/vipClub/herobgright.png);
+        // background-position: center;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+    & .vipheroMain {
+        padding: 116px 0 0 70px;
+        &::before{
+            content: '';
+            position: absolute;
+            bottom: -11rem;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-image: url(../Img/vipClub/herobg.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: -1;
+        }
+        & .heroHeading {
+            font-size: 45px;
+            color: #E3E3E3;
+            font-weight: 900;
+            line-height: normal;
+            & .heroHeadingtwo {
+                color: #FFD700;
+            }
+        }
+        & .vipHorocard {
+            padding-top: 90px;
+            & .cardiconone {
+                max-width: 59px;
+                max-height: 50px;
+            }
+            & .cardicontwo {
+                max-width: 46px;
+                max-height: 49px;
+            }
+            & .cardiconthree {
+                max-width: 58px;
+                max-height: 49px;
+            }
+            & .cardiconfour {
+                max-width: 75px;
+                max-height: 46px;
+            }
+            & .heroCardTitle {
+                font-size: 22px;
+                color: #E3E3E3;
+                line-height: normal;
+                padding-bottom: 4px;
+                & .vip {
+                    color: #FFD700;
+                }
+            }
+            & .exclusive {
+                padding-left: 35px;
+            }
+            & .levelndrew {
+                padding-left: 26px;
+            }
+            & .playearn {
+                padding-left: 14px;
+            }
+            & .heroCardpara {
+                font-size:15px ;
+                color: #93ACD3;
+                line-height: normal;
+            }
+        }
+        & .vipheroImg {
+            max-width: 740px;
+            max-height: 391px;
+        }
+    }
+}
+// ********* vipheroSection end ********
+
+// ********* how work section start ********
+.howWork{
+    padding-top: 175px ;
+    &::before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        height: 100%;
+        width: 50%;
+        bottom: -6rem;
+        left: -10px;
+        background: url(../Img/vipClub/howworkshap.png) no-repeat;
+        background-size: auto;
+        display: none;
+        background-position: left bottom;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+        top: 5rem;
+        // right: -10px;
+        background: url(../Img/vipClub/howworkshape2.png) no-repeat;
+        background-size: contain;
+        display: none;
+        background-position: right bottom;
+    }
+    & .howworkHeading {
+        font-size: 40px;
+        font-weight: 900;
+        color: #E3E3E3;
+    }
+    & .howorkpara {
+        font-size: 20px;
+        color: #93ACD3;
+    }
+    & .howWorkcard {
+        padding-top: 100px;
+        & .workCardMain {
+            & .workCard {
+                padding: 23px 27px 28px 25px;
+                border-radius: 20px;
+                border: 2px solid #00990A; 
+                & .workCardImg {
+
+                }
+                & .loginIcon {
+                    max-width: 121px;
+                    max-height: 103px;
+                }
+                & .playIcon {
+                    max-width: 175px;
+                    max-height: 103px;
+                }
+                & .inreaseIcon {
+                    max-width: 180px;
+                    max-height: 103px;
+                }
+                & .workCardtitle {
+                    color: #E3E3E3;
+                    font-size: 25px;
+                    line-height: normal;
+                    padding-top: 35px;
+                }
+                & .workCardpara {
+                    font-size: 13px;
+                    color: #93ACD3;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+    & .workprogress {
+        padding-top: 38px;
+        & .progressMain {
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 0;
+                height:8px;
+                width: 100%;
+                background-color: #0a941273;
+                transform: translateY(-50%);
+            }
+            & .progressBar {
+                height: 58px;
+                width: 58px;
+                background:#00990A ;
+                font-size:36px ;
+                font-weight: 800;
+                color: #000;
+            }
+        }
+    }
+    & .playbtnMain {
+        padding-top: 66px;
+        & .playBtn {
+            font-size: 22px;
+            border-radius: 11px;
+            background: #03B80F;
+            color: #FFF;
+            padding: 8px 59px 9px 56px;
+
+        }
+    }
+}
+// ********* how work section end ********
+
+// ********* rank section start ********
+.rankSection {
+    padding-top: 157px ;
+    & .rankHeading {
+        font-size: 45px;
+        font-weight: 900;
+        color: #E3E3E3;
+        line-height: normal;
+        & .rankHeadingtwo {
+            color: #FFD700;
+        }
+    }
+    & .rankpara {
+        font-size:20px ;
+        color: #93ACD3;
+        padding-top: 12px;
+        padding-bottom: 50px;
+    }
+    & .rankcontent {
+        padding: 108px 35px 60px 35px;
+        background: url(../Img/vipClub/rankcardbg.png) no-repeat;
+        background-size: cover;
+        border-radius: 35px;
+        margin-right: 30px;
+        & .rankcontentRow {
+            gap: 97px 0;
+            & .rankCard {
+                padding: 0 33px 50px 23px;
+                border-radius: 20px;
+                border: 2px solid #00990A;
+                background: linear-gradient(360deg, rgba(16, 21, 35, 0.50) 53.13%, rgba(66, 120, 195, 0.50) 100%);
+                & .rankcardone {
+                    max-width: 145px;
+                    max-height: 90px;
+                    margin-top: -47px;
+                }
+                & .rankcardtwo {
+                    max-width: 100px;
+                    max-height:104px ;
+                    margin-top: -50px;
+                }
+                & .rankcardthree {
+                    max-width: 116px;
+                    max-height:109px ;
+                    margin-top: -50px;
+                }
+                & .rankCHeading {
+                    font-size:13px ;
+                    font-weight:900 ;
+                    color:#FFF ;
+                    padding-bottom: 13px;
+                }
+                & .rankcount {
+                    max-width: 50px;
+                    max-height: 50px;
+                }
+                & .ranktitle {
+                    color: #93ACD3;
+                    font-size: 11px;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+                & .ranktitleprice {
+                    color: #FFD700;
+                    font-weight: 700;
+                    font-size: 10px;
+                    & .us {
+                        color: #FFF;
+                    }
+                }
+                & .cardline {
+                    height: 1px;
+                    background: #FFD700;
+                    margin: 21px 0 10px 0;
+                }
+                & .rankdetailmain {
+                    padding-top: 7px;
+                    &.active {
+                        & .rankDetail {
+                            color: #fff;
+                        }
+                        & .rankDetailicon {
+                        background-color: #04E929;
+                        & .checkicon {
+                            & img {
+                                filter: brightness(10);
+                            }
+                        }
+                        }
+                    }
+                    & .rankDetail {
+                        color: #748290;
+                        font-size: 10px;
+                        font-weight: 500;
+                        line-height: normal;
+                    }
+                    & .rankDetailicon {
+                        height: 15px;
+                        width: 15px;
+                        background: #748290;
+                        & .checkicon {
+                            height: 9px;
+                            width: 11px;
+                            & img {
+                                filter: invert(0.1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    & .rankproMain {
+        right: -25px;
+        top: 0;
+        & .rankproline {
+            height: 80%;
+            top: 10%;
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                height: 100%;
+                width: 8px;
+                z-index: -1;
+                background: #04e92a45;
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                top: 60px;
+                left: 50%;
+                transform: translateX(-50%);
+                height: 27px;
+                width: 27px;
+                background:url(../Img/vipClub/progressicon2.png) no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+        & .rankprogress {
+            height: 35px;
+            width: 35px;
+            background: #00990A;
+            border-radius: 13px;
+            & .progressicon {
+                height: 8px;
+                width: 14px;
+            }
+        }
+    }
+}
+// ********* rank section end ********
+
+// ********* becomeroylty section start ********
+.becomeroylty {
+    padding-top: 80px;
+    & .royaltyCard {
+        padding: 90px 20px 31px 52px;
+        border-radius: 35px;
+        background: url(../Img/vipClub/royaltybg.png) no-repeat;
+        background-size: cover;
+        & .royaltyHeading {
+            font-size: 50px;
+            font-weight: 900;
+            color: #E3E3E3;
+            padding-bottom: 110px;
+            & .Headingtwo {
+                color: #FFD700;
+            }
+        }
+        & .royaltyImg {
+            max-width: 226px;
+            max-height: 138px;
+        }
+        & .royaltypara {
+            color: #93ACD3;
+            font-size: 18px;
+            line-height: normal;
+            padding-top: 59px;
+        }
+        & .royaltsubheading {
+            color: #FFFFFF;
+            font-size: 25px;
+            font-weight: 800;
+            line-height: normal;
+            padding-top: 32px;
+            & .royaltSubHeadingTwo {
+                color: #FFD700;
+            }
+        }
+        & .joinBtnMain {
+            padding-top: 54px;
+            padding-bottom: 12px;
+            & .joinBtn {
+                padding: 8px 27px 9px 27px;
+                line-height: normal;
+                font-size: 22px;
+                color: #FFF;
+                background: #03B80F;
+                font-weight: 800;
+                border-radius: 11px;
+                transition: all 0.3s ease-in-out;
+                &:hover {
+                    background: #0ccc19;
+                }
+            }
+        }
+        & .royaltyContent {
+            padding-top: 20px;
+            & .royaltycheckmain {
+                height: 25px;
+                width: 25px;
+                background: #04E929;
+                & .royaltyicon {
+                    height: 16px;
+                    width: 18px;
+                }
+            }
+            & .royaltychecktitle {
+                font-size: 20px;
+                line-height: normal;
+                color: #fff;
+                padding-left: 11px;
+            }
+        }
+        & .royaltyLine {
+            width: 90%;
+            height: 1px;
+            background: #03B80F;
+            margin: 23px 0 19px 0;
+        }
+        & .telegramchan {
+            font-size: 15px;
+            color: #93ACD3;
+            & .telegram {
+                color: #E4E5E6;
+            }
+        }
+    }
+}
+// ********* becomeroylty section end ********
+
+// ********* about damble section start ********
+.aboutDambleFluid{
+    border-radius: 32px;
+    background: linear-gradient(90deg, rgba(22, 31, 44, 0.70) 0%, rgba(22, 31, 44, 0.70) 82.29%);
+    padding-top: 47px;
+    padding-bottom: 97px;
+    padding-left: 44px;
+    margin-top: 103px;
+    & .aboutDambleFluidHeading{
+        color: #E3E3E3;
+        font-family: 'Montserrat';
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        margin-bottom: 78px;
+    }
+    & .bottomBorder{
+        border-bottom: 1px solid;
+        border-color: #03B80F;
+        padding-bottom: 21px;
+        width: 775px;
+        margin-bottom: 23px;
+        &:last-child{
+            border-bottom: 0;
+        }
+        & .subHeading{
+            color: #E3E3E3;
+            font-family: 'Montserrat';
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin-bottom: 18px;
+            & span{
+                color: #FFD700;
+            }
+        }
+        & .para{
+            color: #93ACD3;
+            font-family: 'Montserrat';
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+    }
+}
+// ********* about damble section end ********
+
+// ********* Vip Club Page end ********
+
+
+
+// ********* Promotion Page start ********
+.promotionSection {
+    padding: 69px 0 100px 0;
+    & .PromotionHeading {
+        color: #D6D6D6;
+        font-size: 25px;
+        font-weight: 700;
+        line-height: normal;
+    }
+    & .promoationPills{
+        border-radius: 16px;
+        background: #252E39;
+        width: 212px;
+        height: 32px;
+        & .PromotionBtn{
+            width: 102px;
+            height: 31px;
+            border-radius: 15px;
+            background: #252E39;
+            color: #fff;
+            font-size: 15px;
+            font-weight: 500;
+            line-height: normal;
+            & .activeCount {
+                color: #FCBD30;
+                font-weight: 800;
+                // font-family: Inter;
+            }
+            &.active{
+                width: 118px;
+                height: 32px;
+                border-radius: 16px;
+                background: #6324D7;
+                color: #fff;
+            }
+        }
+    }
+    & .sportBtnMain {
+        padding-top: 39px;
+        & .sportBtn {
+                color: #D6D6D6;
+                font-size: 20px;
+                line-height: normal;
+                padding: 1.5px;
+                width: 90%;
+                height: 55.73px;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    background: linear-gradient(163deg, rgba(85, 120, 254, 0.4) 30%, rgba(22, 31, 44, 0.4) 50%);
+                    // box-shadow: 0px 4px 4px rgba(0,0,0,.25);
+                    
+                    filter: blur(0.5px);
+                    border-radius: 11px;
+                }
+                & .sportbtncontent {
+                    background: #161F2C;
+                    filter: blur(0.5px);
+                    padding: 0px 22px 0px 40px;
+                    border-radius: 11px;
+                }
+                & .sportBtnIcon {
+                    max-width: 22px;
+                    max-height: 22px;
+                }
+                & .rightarrow {
+                    height: 11px;
+                    width: 11px;
+                }
+        }
+    }
+    & .promotionRight {
+        padding-left:55px;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 0.5px;
+            background: rgba(147, 172, 211, 0.60);
+
+        }
+        & .promoHeading {
+            color: #D6D6D6;
+            font-size: 22px;
+            font-weight: 700;
+            line-height: normal;
+        }
+        & .Promopara {
+            color: #93ACD3;
+            font-size: 15px;
+            line-height: normal;
+            font-weight: 500;
+        }
+        & .promoInputMain {
+            padding: 1.3px;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                // background: linear-gradient(135deg, rgba(85, 120, 254, 0.4) 60%, rgba(22, 31, 44, 0.4) 50%);
+                // box-shadow: 0px 4px 4px rgba(0,0,0,.25);
+                background:linear-gradient(167deg, rgba(85, 120, 254, 0.4) 33%, rgba(22, 31, 44, 0.4) 50%);
+                filter: blur(1px);
+                border-radius: 11px;
+            }
+            & .input-group {
+                height: 55px;
+                & .promoInput {
+                    background-color: #161F2C;;
+                    border-radius: 11px;
+                    padding: 17px 23px;
+                    font-weight: 500;
+                    font-size: 15px;
+                    color: rgba(147, 172, 211, 0.50);
+                    &::placeholder {
+                        color: rgba(147, 172, 211, 0.50);
+                        font-weight: 500;
+                        font-size: 15px;
+                    }
+                }
+                & .getnowBtn {
+                    border-radius: 0px 11px 11px 0px;
+                    background: #6324D7;
+                    color: #FFF;
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: normal;
+                    padding: 0px 35px;
+                }
+            }
+        }
+        
+    }
+    & .promotionCardMain {
+        padding-top: 35px;
+        gap: 33px 0;
+        & .promotionCard {
+            & .promoimg {
+                & .promodetail {
+                    padding: 30px 0 0 20px;
+                    & .promoCardHeading {
+                        color: #FFF;
+                        font-size: 18px;
+                        font-weight: 800;
+                        line-height: normal;
+                        line-height: 24px;
+                        & .promoCardHeadingtwo {
+                            color: #FCBD30;
+                        }
+                    }
+                    & .promoCardpara {
+                        color: #93ACD3;
+                        font-size: 12px;
+                        font-weight: 500;
+                        line-height: normal;
+                        & .promoCardparatwo {
+                            color: #B7C7DF;
+                        }
+                    }  
+                }
+                & .promotionTag {
+                    border-radius: 0px 18px;
+                    background: #5578FE;
+                    box-shadow: 0px 0px 10px 0px #000;
+                    color: #FFF;
+                    font-size: 6px;
+                    font-weight: 600;
+                    line-height: normal;
+                    width: 46.578px;
+                    height: 21.766px;
+                    top: 2px;
+                    right: 2px;
+                }
+            }
+            & .promotioncardTitle {
+                color: #93ACD3;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: normal;
+                padding-top: 24px;
+                & .titletwo {
+                    color: #D9D9D9;
+                }
+                & .titlethree {
+                    color: #FFD700;
+                }
+            }
+            & .seemore {
+                padding-top: 11px;
+                & .seemoreBtn {
+                    color: #788E28;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: normal;
+                    & .seemoreIcon {
+                        max-width: 19px;
+                        max-height: 11px;
+                    }
+                }
+            }
+        }
+    }
+}
+// ********* Promotion Page end ********
+
+
+
+// ********* ourparnter Page start ********
+.ourparnterpage {
+    padding: 84px 45px 0 45px;
+    & .ourParnter {
+        & .partnerHeading {
+            color: #E3E3E3;
+            font-size: 30px;
+            font-weight: 900;
+            line-height: normal;
+            padding-bottom: 30px;
+        }
+        & .ourpartnerContent {
+            & .partnerImg {
+                
+            }
+            & .partnerName {
+                color: #FFD700;
+                font-size: 30px;
+                font-weight: 800;
+                line-height: normal;
+            }
+            & .parnterinsta {
+                max-width: 18px;
+                max-height: 18px;
+            }
+            & .partnerDetail {
+                color: #93ACD3;
+                font-size: 15px;
+                font-weight: 700;
+                line-height: normal;
+                padding-top: 38px;
+                padding-bottom: 43px;
+            }
+            & .readMoreBtn {
+                color: #03B80F;
+                font-size: 15px;
+                font-weight: 500;
+                line-height: normal;
+            }
+        }
+        & .partnerMain {
+            padding-top: 60px;
+        }
+    }
+}
+// ********* ourparnter Page end ********
+
+
+
+// ********* help center Page start ********
+.helpcenterPage {
+    padding-top: 40px;
+    & .helpCenter {
+        & .helpCenterHeading {
+            color: #FFF;
+            font-size: 15px;
+            font-weight: 800;
+            line-height: normal;
+            padding-bottom: 17px;
+            & .helpIcon {
+                max-width: 24px;
+                max-height: 24px;
+            }
+        }
+        & .helpCenterLeft {
+            border-radius: 10px 0px 10px 10px;
+            background: #161F2C;
+            padding: 10px;
+            gap: 9px;
+            & .helpBtn {
+                color: rgba(147, 172, 211, 0.50);
+                font-size: 12px;
+                border-radius: 7px;
+                background: #293445;
+                font-weight: 500;
+                line-height: normal;
+                width: 210px;
+                height: 35px;
+                padding-left: 22px;
+                transition: all 0.3s ease-in-out;
+                border: 1.5px solid #293445;
+                &:hover {
+                    border-color:  #03B80F;
+                    color: #FFF;
+                }
+                &.active {
+                    border-color:  #03B80F;
+                    color: #FFF;
+                }
+            }
+        }
+        & .card {
+            padding: 34px 14px 76px 14px;
+            border-radius: 21px;
+            background: #161F2C;
+            & .helpcardHeading {
+                color: #FFF;
+                font-size: 24px;
+                font-weight: 600;
+                line-height: normal;
+            }
+            & .helptitleMain {
+                padding: 32px 20px 22px 20px;
+                & .helptitle {
+                    color: #FFF;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+        }
+        
+        // accordion btn
+        & .helpAccordion {
+            & .helppagebtn {
+                border-radius: 3px;
+                background: rgba(147, 172, 211, 0.15);
+                padding-left: 32px;
+                color: rgba(147, 172, 211, 0.50);
+                font-size: 13px;
+                font-weight: 500;
+                line-height: normal;
+                border: 1.5px solid rgba(147, 172, 211, 0.02);
+                margin-bottom: 12px;
+                &::after {
+                    background: url(../Img/ourpartners/left-arrow.png) no-repeat;
+                    background-size: cover;
+                    height: 9px;
+                    width: 9px;
+                    display: flex; 
+                    align-items: center;
+                    justify-self: center;
+                }
+                &:not(.collapsed) {
+                    border-color: #03B80F;
+                    color: #FFF;
+                }
+            }
+            & .helpbtnContent {
+                border-radius: 3px;
+                background: rgba(147, 172, 211, 0.15);
+                font-size: 12px;
+                color: #FFF;
+                padding: 20px 32px;
+            }
+        }
+    }
+}
+// ********* help center Page end ********
+
+
+// ********* model Page start ********
+
+
+// all model start
+.modalMain {
+    max-width: 461px;
+    & .modalContentall {
+        border-radius: 13px;
+        background: #161F2C;
+        & .modalHeaderAll {
+            & .modalHeading {
+                    color: #FFF;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: normal;
+                    gap: 9px;
+                    & .leftarrow {
+                        height: 13px;
+                        width: 13px;
+                    }
+            }
+            & .modalClose {
+                filter: invert(1);
+                font-size: 13px;
+            }
+        }
+        & .modalLine {
+            background: #00990A;
+            height: 0.6px;
+            margin: 13px 0 6px 0;
+        }
+    }
+}
+// all model start
+
+
+// ********* user information model start ********
+.userInfoModel {
+    & .userInfocontent {
+        & .userinforcard {
+            border-radius: 13px;
+            background: #161F2C;
+            padding: 13px;
+            padding-bottom: 70px;
+            & .userinfoHeader {
+                & .uservipTagmain {
+                    top: -21px;
+                    right: 35px;
+                    border-radius: 0px 0px 9px 9px;
+                    & .uservipTagContent {
+                    border-radius: 0px 0px 9px 9px;
+                    padding: 0.8px;
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            height: 100%;
+                            width: 100%;
+                            z-index: -1;
+                            border-radius: 0px 0px 9px 9px;
+                            // background: linear-gradient(90deg, rgb(85 120 254 / 36%) 42%, #FFD700 63%);
+                            // background: linear-gradient(to right, red, orange);
+                            background: linear-gradient(0deg, #FFD700 35%, rgba(199, 211, 200, 0) 63%);
+                        }
+                        & .uservipTag {
+                            padding: 29px 10px 12px 10px;
+                            background: #252E39;
+                            border-radius: 0px 0px 9px 9px;
+                            & .vipImg {
+                                max-width: 37px;
+                                max-height: 37px;
+                            }
+                        }
+                    }
+                }
+            }
+            & .userinfobody {
+                margin-top: 13px;
+                & .userdata {
+                    border-radius: 15px;
+                    border: 1.5px solid rgba(0, 153, 10, 0.30);
+                    & .userIcon {
+                        max-width: 75px;
+                        max-height: 75px;
+                    }
+                    & .username {
+                        color: #FFF;
+                        font-size: 15px;
+                        font-weight: 700;
+                        line-height: normal;
+                    }
+                    & .userid {
+                        color: #93ACD3;
+                        font-size: 12px;
+                        font-weight: 500;
+                        line-height: normal;
+                    }
+                    & .userAward {
+                        & .userawardImg {
+                            height: 19px;
+                            width: 19px;
+                        }
+                    }
+                }
+                & .usersubHeading {
+                    color: #FFF;
+                    font-size: 13px;
+                    font-weight: 600;
+                    line-height: normal;
+                    & .rankIcon {
+                        height: 18px;
+                        width: 18px;
+                    }
+                    & .rankgraphicon {
+                        height: 19px;
+                        width: 19px;
+                    }
+                    & .threemedalIcon {
+                        height: 24px;
+                        width: 24px;
+                    }
+                    & .prize {
+                        height: 24px;
+                        width: 24px;
+                    }
+                }
+                & .userrankDetail {
+                    border-radius: 7px;
+                    background: rgba(69, 82, 102, 0.25);
+                    margin-top: 12px;
+                    padding: 10px 11px;
+                    & .userranmedalmain {
+                        padding: 0.8px;
+                        margin-top: 11px;
+                        &::before {
+                                content: '';
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                height: 100%;
+                                width: 100%;
+                                border-radius: 7px;                           
+                                background: linear-gradient(180deg, #FFD700 35%, rgba(199, 211, 200, 0) 63%);
+                        }
+                        & .userranklevel{
+                            padding: 13px 0 7px 0 ;
+                            border-radius: 7px;
+                            background: #212c3b;
+                            & .ranklevel {
+                                & .ranklevelcount {
+                                    color:#FFF;
+                                    font-size: 10px;
+                                    font-weight: 500;
+                                    line-height: normal;
+                                    text-transform: uppercase;
+                                    margin-bottom: 13px;
+                                    & .ranklevelcount {
+                                        font-size: 16px;
+                                        font-weight: 900;
+                                    }
+                                }
+                                & .ranklevelImg {
+                                    width: 56px;
+                                    height: 34px;
+                                }
+                                &.active {
+                                    & .ranklevelcount {
+                                        color: #FFD700;  
+                                    }
+                                }
+                            }
+                            & .nextIcon {
+                                height: 16px;
+                                width: 16px;
+                                right: 5px;
+                                top: 50%;
+                                transform: translateY(-50%);
+                            }
+                        }
+                    }
+                    & .rankprogressbar {
+                        border-radius: 7px;                   
+                        height: 6px;
+                        & .progress-bar {
+                            background: #93ACD3;
+                        }
+                    }
+                }
+                & .usergraph {
+                    border-radius: 7px;
+                    background: rgba(69, 82, 102, 0.25);
+                    margin-top: 12px;
+                    padding: 9px 11px;
+                    & .userrankcount {
+                        padding-top: 23px;
+                        & .userrankcountCard {
+                            border-radius: 7px;
+                            background: #161F2C;
+                            padding: 8px 10px 20px 7px;
+                            & .usercountHeading {
+                                color: #FFF;
+                                font-size: 11px;
+                                font-weight: 500;
+                                line-height: normal;
+                                gap: 10px;
+                                & .totalwinIcon {
+                                    height: 16px;
+                                    width: 16px;
+                                }
+                            }
+                            & .totalcountline {
+                                height: 0.5px;
+                                width: 85%;
+                                background: #00990A;
+                                margin-top: 7px ;
+                                margin-bottom: 20px;
+                            }
+                            & .total {
+                                color: #FFF;
+                                font-size: 13px;
+                                font-weight: 600;
+                                line-height: normal;
+                            }
+                        }
+                    }
+                }
+                & .threefavgames {
+                    border-radius: 7px;
+                    background: rgba(69, 82, 102, 0.25);
+                    margin-top: 10px;
+                    min-height: 244px;
+                }
+                & .oopsImg {
+                    height: 64px;
+                    width: 64px;
+                }
+                & .oopsTitle {
+                    color: rgba(147, 172, 211, 0.50);
+                    font-size: 11px;
+                    font-weight: 500;
+                    margin-top: 12px;
+                }
+                ::-webkit-scrollbar-track {
+                    border-radius: 7px;
+                    background: #93ACD3;
+                }
+                ::-webkit-scrollbar {
+                    width: 1px;
+                    height: 6px;
+                    border-radius: 7px;
+                    background: #93ACD3;
+                }
+                ::-webkit-scrollbar-thumb {
+                    border-radius: 7px;
+                    background: #93ACD3;
+                }  
+            }
+        }
+    }
+}
+// ********* user information model end ********
+
+// ********* master medal modal start ********
+.mastermedal {
+    & .masterModelmain {
+        & .mastermedalContent {         
+            padding: 16px 12px 61px 12px;
+            & .mastermedalBody {
+                margin: 9px;
+                border-top: 0.5px solid #00990A;;
+                padding: 23px 0 43px 0 ;
+                & .masterboxMain {
+                    & .boxscroll {
+                        background: rgba(69, 82, 102, 0.30);
+                        border-radius: 7px;
+                        margin-bottom: 7px;
+                        & .boxCard {
+                            border-radius: 7px; 
+                            padding: 3px 16px;
+                            & .lockIcon {
+                                width: 21px;
+                                height: 42px;
+                            }
+                            & .boxnextIcon {
+                                height: 22px;
+                                width: 22px;
+                            }
+                            & .boxIcon {
+                                width: 48px;
+                                height: 34px;
+                            }
+                            & .boxCardTitle {
+                                height: 16px;
+                                width: 16px;
+                                background-color: #FFF283;
+                                color: #000;
+                                font-size: 9px;
+                                margin-top: -12px;
+                                font-weight: 700;
+                            }
+                            &.blue {
+                                & .boxCardTitle {
+                                    background-color: #CCDEFC;
+                                }
+                            }
+                            &.max {
+                                & .boxCardTitle {
+                                    background: linear-gradient(180deg, #FFE55B 0%, #9A0F0B 100%);
+                                    background-clip: text;
+                                    -webkit-background-clip: text;
+                                    -webkit-text-fill-color: transparent;
+                                    height: auto;
+                                    width: auto;
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                        & .boxarrow {
+                            background: #161F2C;
+                        }
+                    }
+                    ::-webkit-scrollbar-track {
+                        border-radius: 7px;
+                        background: rgba(242, 189, 21, 0.50);
+                    }
+                    ::-webkit-scrollbar {
+                        width: 1px;
+                        height: 6px;
+                        border-radius: 7px;
+                        background: rgba(242, 189, 21, 0.50);
+                    }
+                    ::-webkit-scrollbar-thumb {
+                        border-radius: 7px;
+                        background: rgba(242, 189, 21, 0.50);
+                    }                 
+                }
+                & .archievemedal {
+                    padding-top: 29px;
+                    & .coinimg {
+                        width: 123px;
+                        height: 120px;
+                    }
+                    & .achieveBtn {
+                        border-radius: 0px 11.5px 11.5px 0px;
+                        background: rgba(69, 82, 102, 0.30);
+                        padding: 3px 0 4px 13px;
+                        color: rgba(147, 172, 211, 0.50);
+                        font-size: 8px;
+                        font-weight: 600;
+                        line-height: normal;
+                        & .totaAchieve {
+                            color: #FFD700;
+                            font-size: 8px;
+                            font-weight: 900;
+                            line-height: normal;
+                        }
+                        & .usdt {
+                            color: #0F1;
+                            font-size: 8px;
+                            font-weight: 600;
+                            line-height: normal;
+                        }
+                    }
+                }
+                & .mastermodelline {
+                    background: #00990A;
+                    height: 0.6px;
+                    margin: 10px 0 19px 0;
+                }
+                & .mastermodelContent {
+                    border-radius: 7px;
+                    background: rgba(69, 82, 102, 0.30);
+                    padding: 15px 0;
+                    gap: 10px 0;
+                    & .masterCard {
+                        border-radius: 7px;
+                        background: #161F2C;
+                        min-height: 141px;
+                        padding-top: 20px;
+                        & .masterCardIcon {
+                            max-height: 53px;
+                            max-width: 85px;
+                        }
+                        & .masterCardfive {
+                            max-height: 63px;
+                            max-width: 60px;
+                        }
+                        & .masterCardsix {
+                            max-width: 70px;
+                            max-height: 65px;
+                        }
+                        & .masterCardIconelev {
+                            max-width:61px ;
+                            max-height: 43px;
+                        }
+                        & .masterCardeigh {
+                            max-width:70px ;
+                            max-height:85px ;
+                        }
+                        & .masterCardtwenty {
+                            max-width: 105px;
+                            max-height: 103px;
+                        }
+                        & .medalCountMain {
+                            padding: 0.8px;
+                            margin-bottom: -3px;
+                            &::before {
+                                content: '';
+                                position: absolute;
+                                bottom: 0;
+                                left: 50%;
+                                transform: translateX(-50%);
+                                background-color: #fff;
+                                height: 100%;
+                                width: 100%;
+                                z-index: -1;
+                                border-radius: 5px 5px 0px 0px;
+                            }
+                            & .medalCount {
+                                height: 22px;
+                                width: 30px;
+                                border-radius: 5px 5px 0px 0px;
+                                background: #6E5774;
+                                color: #FFF;
+                                font-size: 12px;
+                                font-weight: 900;
+                                line-height: normal;
+                                text-transform: uppercase;
+                            }
+                        }
+                    }
+                }
+            }
+            & .statusUpdate {
+                color: #03B80F;
+                font-size: 11px;
+                font-weight: 500;
+                line-height: normal;
+            }
+        }
+    }
+}
+// ********* master medal  modal end ********
+
+// ********* user information medal start ********
+.userInfoEdit {
+    & .usereditMain {
+        & .usereditcontent {
+            padding: 18px 10px;
+            & .userEditBody {
+                padding: 24px 46px 148px 34px;
+                & .useLabel {
+                    & .userEditIconMain {
+                        padding: 3px;
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            height: 100%;
+                            width: 100%;
+                            background: linear-gradient(90deg, rgba(99,36,215,1) 42%, rgba(75,174,79,1) 63%);
+                            border-radius: 50%;
+                            z-index: -1;
+                        }
+                        & .userEditIcon {
+                            background-color: #161F2C;
+                            padding: 14px;
+                            & .userEditImg {
+                                height: 140px;
+                                width: 140px;
+                            }
+                        }
+                    }
+                    & .editTitle {
+                        border-radius: 7px;
+                        border: 1px solid #54657F;
+                        background: rgba(37, 46, 57, 0.80);
+                        color: #FFF;
+                        font-size: 13px;
+                        font-weight: 500;
+                        line-height: normal;
+                        margin-top: -13px;
+                        padding: 6px 0;
+                        
+                    }
+                }
+                & .usernameIpputMain {
+                    padding: 59px 0 30px 0;
+                    & .username {
+                        color: rgba(147, 172, 211, 0.50);
+                        font-size: 15px;
+                        font-weight: 600;
+                        line-height: normal;
+                    }
+                    & .usernameInput {
+                        border-radius: 7px;
+                        background: rgba(147, 172, 211, 0.50);
+                        font-size: 14px;
+                        color: #FFF;
+                        padding: 12px 18px;
+                    }
+                }
+                & .warning {
+                    color: rgba(147, 172, 211, 0.50);
+                    font-size: 11px;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+}
+// ********* user information medal end ********
+
+// ********* Edit Image medal start ********
+.editImgModal {
+    & .editimgmain {
+        & .editimgcontent {
+            padding: 16px 13px 20px 13px;
+            & .editimgHeader {
+
+            }
+            & .editimgbody {
+                & .editimgCard {
+                    border-radius: 7px;
+                    background: rgba(147, 172, 211, 0.50);
+                    padding: 25px 10px 10px 10px;
+                    & .editimgCardinner {
+                        margin: 0 63px;
+                        background-color: #000;
+                        & .editimgCardimg {
+                            & .galleryIconMain {
+                                background-color: #00000068;
+                                & .galleryIcon {
+                                    height: 33px;
+                                    width: 33px;
+                                }
+                            }
+                        }
+                    }
+                    & .AdjustImg {
+                        color: #FFF;
+                        font-size: 13px;
+                        font-weight: 500;
+                        line-height: normal;
+                    }
+                }
+                & .imgZoomMain {
+                    border-radius: 7px;
+                    background: rgba(147, 172, 211, 0.20);
+                    padding: 9px 15px;
+                    margin-top: 22px;
+                    & .zoomIcon {
+                        height: 14px;
+                        width: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+// ********* Edit Image medal end ********
+
+// ********* model Page end ********
+
+
+
+@include media-breakpoint(basic) {
+}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {
+    .PromotionPage {
+        padding: 0 85px 0 107px;
+    }
+}
+@include media-breakpoint-down(xxl) {
+    .vipclubMain {
+        padding: 0 50px 0 40px;
+    }
+    // ********* rank section start ********
+    .rankSection {
+        & .rankHeading {
+            & .rankHeadingtwo {
+            }
+        }
+        & .rankpara {
+        }
+        & .rankcontent {
+            padding: 108px 30px 60px 30px;
+            & .rankcontentRow {
+                & .rankCard {
+                    padding: 0 20px 50px 20px;
+                    & .rankcardImg {
+                    }
+                    & .rankcardone {
+                    }
+                    & .rankcardtwo {
+                    }
+                    & .rankcardthree {
+                    }
+                    & .damblerproone {
+                    }
+                    & .rankCHeading {
+                    }
+                    & .rankcount {
+                    }
+                    & .ranktitle {
+                        white-space: nowrap;
+                    }
+                    & .ranktitleprice {
+                        white-space: nowrap;
+                        & .us {
+                        }
+                    }
+                    & .cardline {
+                    }
+                    & .rankdetailmain {
+                        &.active {
+                            & .rankDetail {
+                            }
+                            & .rankDetailicon {
+                            & .checkicon {
+                                & img {
+                                }
+                            }
+                            }
+                        }
+                        & .rankDetail {
+                        }
+                        & .rankDetailicon {
+                            & .checkicon {
+                                & img {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .rankcontenttwo {
+        }
+        & .rankproMain {
+            & .rankproline {
+                &::before {
+                }
+                &::after {
+                }
+            }
+            & .rankprogress {
+                & .progressicon {
+                }
+            }
+        }
+    }
+    // ********* rank section end ********
+}
+
+@include media-breakpoint-down(xl) {
+    // all section padding
+    .vipclubMain {
+        padding: 0 60px 0 35px;
+    }
+    .PromotionPage {
+        padding: 0 70px 0 70px;
+    }
+
+    // tab menu section start
+    .topratedTabMain {
+        &::before {
+        }
+        & .topratedgames-tab-content {
+        & .nav-tab {
+        & .toprated-link {
+            &:hover {
+            }
+        }
+        & .toprated-link.active {
+        }
+        }
+        & .search-bar-group {
+        & .search-input {
+            &::placeholder {
+            }
+        }
+        }
+        } 
+    }
+    // tab menu section end
+
+    // toprated-games-main section start
+    .toprated-games-main {
+        &::before {
+        }
+        & .toprated-games {
+            padding: 22px 40px 28px 40px ;
+            & .heading {
+            }
+            & .viewallMain {
+                & .viewall-btn {
+                }
+            }
+            & .games-card-main {
+                & .games-card {
+                    & .games-information {
+                        & .games-information-icon {
+                        }
+                    }
+                    & .games-img {
+                        & .games-img-tag {
+                        }
+                    }
+                    & .games-card-title {
+                    }
+                    & .play-btn {
+
+                    }
+                }
+            }
+            & .tab-pane {
+            }
+        }
+    }
+    // toprated-games-main section end 
+
+    // recentWin section start
+    .recentWin {
+        margin-top: 70px;
+    }
+    // recentWin section end
+
+
+    // ********* Vip Club Page Start ********
+    
+    // ********* vipheroSection start ********
+    .vipheroSection {
+        &::before {
+        }
+        &::after {
+        }
+        & .vipheroMain {
+            padding: 105px 0 0 60px;
+            &::before{
+                bottom: -9rem;
+            }
+            & .heroHeading {
+                font-size: 40px;
+                & .heroHeadingtwo {
+                }
+            }
+            & .vipHorocard {
+                padding-top: 85px;
+                & .heroCardTitle {
+                    font-size: 20px;
+                    & .vip {
+                    }
+                }
+                & .cardiconone {
+                }
+                & .cardicontwo {
+                }
+                & .cardiconthree {
+                }
+                & .cardiconfour {
+                }
+                & .exclusive {
+                }
+                & .levelndrew {
+                }
+                & .playearn {
+                }
+                & .heroCardpara {
+                    font-size: 14px;
+                }
+            }
+            & .vipheroImg {
+            }
+        }
+    }
+    // ********* vipheroSection end ********
+
+    // ********* how work section start ********
+    .howWork {
+        padding-top: 140px;
+        
+        & .howworkHeading {
+            font-size: 32px;
+        }
+        & .howorkpara {
+            font-size: 18px;
+        }
+        & .howWorkcard {
+            padding-top: 80px;
+            & .workCardMain {
+                & .workCard {
+                    padding: 20px 16px 24px 16px;
+                    & .workCardImg {
+                    }
+                    & .loginIcon {
+                    }
+                    & .playIcon {
+                    }
+                    & .inreaseIcon {
+                    }
+                    & .workCardtitle {
+                        font-size: 18px;
+                        padding-top: 30px;
+                    }
+                    & .workCardpara {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        & .workprogress {
+        padding-top: 34px;
+        & .progressMain {
+        &::before {
+        }
+        & .progressBar {
+            height: 50px;
+            width: 50px;
+            font-size: 28px;
+        }
+        }
+        }
+        & .playbtnMain {
+        padding-top: 60px;
+        & .playBtn {
+        }
+        }
+    }
+    // ********* how work section end ********
+
+    // ********* rank section start ********
+    .rankSection {
+        padding-top: 140px ;
+        & .rankHeading {
+            font-size: 42px;
+            & .rankHeadingtwo {
+            }
+        }
+        & .rankpara {
+            font-size:18px ;
+        }
+        & .rankcontent {    
+            padding: 100px 25px 60px 25px;
+            margin-right: 30px;
+            & .rankcontentRow {
+                gap: 90px 0;
+                & .rankCard {
+                    padding: 0 14px 50px 14px;
+                    & .rankcardImg {
+                    }
+                    & .rankCHeading {
+                        font-size:12px;
+                    }    
+                    & .rankcount {
+                        height: 55px;
+                        width: 55px;
+                    }
+                    & .ranktitle {
+                        font-size: 10px;
+                        white-space: normal;
+                    }
+                    & .ranktitleprice {
+                        font-size: 9px;
+                        white-space: normal;
+                    & .us {
+                    }
+                    }
+                    & .cardline {
+                    }
+                    & .rankdetailmain {
+                    &.active {
+                        & .rankDetail {
+
+                        }
+                        & .rankDetailicon {
+                        & .checkicon {
+                            & img {
+
+                            }
+                        }
+                        }
+                    }
+                    & .rankDetail {
+                    }
+                    & .rankDetailicon {
+                        & .checkicon {
+                            & img {
+                            }
+                        }
+                    }
+                    }
+                }
+            }
+        }
+        & .rankproMain {    
+        right: 0;
+        & .rankproline {
+            &::before {
+            }
+            &::after {
+                height: 22px;
+                width: 22px;
+            }
+        }
+        & .rankprogress {
+            height: 30px;
+            width: 30px;
+            & .progressicon {
+            }
+        }
+        }
+    }
+    // ********* rank section end ********
+
+     // ********* becomeroylty section start ********
+    .becomeroylty {
+        & .royaltyCard {
+            padding: 85px 18px 29px 49px;
+            & .royaltyHeading {
+                font-size: 45px;
+                padding-bottom: 100px;
+                & .Headingtwo {
+                }
+            }
+            & .royaltyImg {
+                width: 200px;
+                height: auto;
+            }
+            & .royaltypara {
+                font-size: 17px;
+                padding: 50px 0px 0 0px;
+            }
+            & .royaltsubheading {
+                font-size: 23px;
+                padding-top: 32px;
+                & .royaltSubHeadingTwo {
+                }
+            }
+            & .joinBtnMain {
+                padding: 50px 0 12px 0;
+                & .joinBtn {
+                    font-size: 20px;
+                    padding: 8px 27px;
+                    &:hover {
+                    }
+                }
+            }
+            & .royaltyContent {
+                padding-top: 20px;
+                & .royaltycheckmain {
+                    height: 23px;
+                    width: 23px;
+                    & .royaltyicon {
+                        height: 15px;
+                        width: 16px;
+                    }
+                }
+                & .royaltychecktitle {
+                    font-size: 19px;
+                    padding-left: 12px;
+                }
+            }
+            & .telegramchan {
+                & .telegram {
+                }
+            }
+        }
+    }
+    // ********* becomeroylty section end ********
+
+    // ********* about damble section start ********
+    .aboutDambleFluid{
+        padding-right: 60px;
+        padding-bottom: 60px;
+        & .aboutDambleFluidHeading{    
+            font-size: 30px;
+            margin-bottom: 55px;
+        }
+        & .bottomBorder{
+            width: auto;
+            &:last-child{    
+            }
+            & .subHeading{
+                font-size: 18px;
+                & span{
+                }
+            }
+            & .para{
+                font-size: 15px;
+            }
+        }
+    }
+    // ********* about damble section end ********
+    // ********* Vip Club Page end ********
+
+
+    // ********* Promotion Page start ********
+    .promotionSection {
+        padding: 50px 0 0 0 ;
+        & .PromotionHeading {
+        }
+        & .promoationPills{
+            & .PromotionBtn{
+                & .activeCount {
+                }
+                &.active{
+                }
+            }
+        }
+        & .sportBtnMain {
+                & .sportBtn {   
+                    width:93%;
+                    &::before {
+                    }
+                    & .sportbtncontent {
+                    }
+                }
+        }
+        & .promotionRight {
+            padding-left: 40px;
+            &::before {
+            }
+            & .promoHeading {
+            }
+            & .Promopara {
+            }
+            & .promoInputMain {
+                &::before {
+                    background:linear-gradient(126deg, rgba(85, 120, 254, 0.4) 33%, rgba(22, 31, 44, 0.4) 50%);
+                }
+                & .input-group {
+                    height: 50px;
+                    & .promoInput {
+                        &::placeholder {
+                        }
+                    }
+                    & .getnowBtn {
+                    }
+                }
+            }
+            
+        }
+        & .promotionCardMain {
+            & .promotionCard {
+                & .promoimg {
+                    & .promodetail {
+                        & .promoCardHeading {
+                            & .promoCardHeadingtwo {
+                            }
+                        }
+                        & .promoCardpara {
+                            & .promoCardparatwo {
+                            }
+                        }  
+                    }
+                    & .promotionTag {
+                    }
+                }
+                & .promotioncardTitle {
+                    & .titletwo {
+                    }
+                    & .titlethree {
+                    }
+                }
+                & .seemore {
+                    & .seemoreBtn {
+                    }
+                }
+            }
+        }
+    }
+    // ********* Promotion Page end ********
+
+
+    // ********* ourparnter Page start ********
+    .ourparnterpage {
+        padding: 75px 30px 0 30px;
+        & .ourParnter {
+            & .partnerHeading {
+                font-size: 28px;
+                padding-bottom: 24px;
+            }
+            & .ourpartnerContent {
+                // gap: 15px;
+                & .partnerImg {
+                }
+                & .partnerName {
+                    font-size: 27px;
+                }
+                & .parnterinsta {
+                    height: 20px;
+                    width: 20px;
+                }
+                & .partnerDetail {
+                    font-size: 14px;
+                    padding-top: 13px;
+                    padding-bottom: 16px;
+                }
+                & .readMoreBtn {
+                    font-size: 14px;
+                }
+            }
+            & .partnerMain {
+                padding-top: 42px;
+            }
+        }
+    }
+    // ********* ourparnter Page end ********
+}
+
+@include media-breakpoint-down(lg) {
+    // all section padding
+    .vipclubMain {
+        padding: 0 30px 0 25px;
+    }
+    .PromotionPage {
+        padding: 0 30px 0 30px;
+    }
+    // tab menu section start
+    .topratedTabMain {
+        &::before {
+        }
+        & .topratedgames-tab-content {
+        & .nav-tab {
+        & .toprated-link {
+            &:hover {
+            }
+        }
+        & .toprated-link.active {
+        }
+        }
+        & .search-bar-group {
+        & .search-input {
+            &::placeholder {
+            }
+        }
+        }
+        } 
+    }
+    // tab menu section end
+
+    // toprated-games-main section start
+    .toprated-games-main {
+        &::before {
+        }
+        & .toprated-games {
+            padding: 22px 30px 28px 30px ;
+            & .heading {
+            }
+            & .shadowball {
+                &::before {
+                    left: -15px;
+                    height: 20px;
+                    width: 20px;
+                }
+            }
+            & .viewallMain {
+                & .viewall-btn {
+                }
+            }
+            & .games-card-main {
+                & .games-card {
+                    & .games-information {
+                        & .games-information-icon {
+                        }
+                    }
+                    & .games-img {
+                        & .games-img-tag {
+                        }
+                    }
+                    & .games-card-title {
+                    }
+                    & .play-btn {
+
+                    }
+                }
+            }
+            & .tab-pane {
+            }
+        }
+    }
+    // toprated-games-main section end
+
+    // recentWin section start
+    .recentWin {
+        margin-top: 60px;
+    }
+    // recentWin section end
+
+    // help-us section start
+    .help-us {
+        & .helpus-left {
+            & .help-us-heading {
+                font-size: 22px;
+            }
+            & .help-us-para {
+                font-size: 10px;
+            }
+            & .help-us-paratwo {
+                padding-top: 26px;
+            }
+            & .showmore-btn-main {
+                padding-top: 25px;
+                & .showmore-btn {
+                    font-size: 17px;
+                }
+            }
+        }
+        & .helpus-right {
+            &::before {
+            }
+            & .help-us-heading {
+                font-size: 22px;
+            }
+            & .help-us-textarea {
+                & .text-area {
+                    &::placeholder {
+                    }
+                }
+            }
+            & .textarea-title {
+            }
+            & .leavemsg-btn {
+            }
+            & .helpus-email-main {
+                & .helpus-email {
+                }
+            }
+        }
+    }
+    // help-us section end
+
+
+    // ********* Vip Club Page Start ********
+
+    
+    // ********* vipheroSection start ********
+    .vipheroSection {
+        &::before {
+        }
+        &::after {
+        }
+        & .vipheroMain {
+            padding: 100px 0 0 45px;
+            &::before{
+                bottom: -9rem;
+            }
+            & .heroHeading {
+                font-size: 35px;
+                & .heroHeadingtwo {
+                }
+            }
+            & .vipHorocard {
+                padding-top: 70px;
+                & .heroCardTitle {
+                    font-size: 18px;
+                    & .vip {
+                    }
+                }
+                & .cardiconone {
+                }
+                & .cardicontwo {
+                }
+                & .cardiconthree {
+                }
+                & .cardiconfour {
+                }
+                & .exclusive {
+                }
+                & .levelndrew {
+                }
+                & .playearn {
+                }
+                & .heroCardpara {
+                    font-size: 13px;
+                }
+            }
+            & .vipheroImg {
+            }
+        }
+    }
+    // ********* vipheroSection end ********
+
+    // ********* how work section start ********
+    .howWork {
+        padding-top: 100px;
+    & .howworkHeading {
+        font-size: 28px;
+    }
+    & .howorkpara {
+        font-size: 16px;
+    }
+    & .howWorkcard {
+        padding-top: 70px;
+        & .workCardMain {
+            & .workCard {
+                padding: 16px 10px 23px 10px;
+                & .workCardImg {
+                }
+                & .loginIcon {
+                    width: 82px;
+                    height: 80px;
+                }
+                & .playIcon {
+                    width: 105px;
+                    height: 80px;
+                }
+                & .inreaseIcon {
+                    width: 120px;
+                    height: 80px;
+                }
+                & .workCardtitle {
+                    padding-top: 0;
+                    font-size: 20px;
+                }
+                & .workCardpara {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    & .workprogress {
+        padding-top: 30px;
+        & .progressMain {
+        &::before {
+        }
+        & .progressBar {
+            height: 40px;
+            width: 40px;
+            font-size: 24px;
+        }
+        }
+    }
+    & .playbtnMain {
+        padding-top: 48px;
+        & .playBtn {
+            font-size: 20px;
+            padding: 8px 48px 9px 48px
+        }
+    }
+    }
+    // ********* how work section end ********
+
+    // ********* rank section start ********
+    .rankSection {
+        padding-top: 105px;
+        & .rankHeading {
+            font-size: 36px;
+            & .rankHeadingtwo {
+            }
+        }
+        & .rankpara {
+            font-size: 16px;
+            padding-top: 18px;
+        }
+        & .rankcontent {
+            padding: 80px 50px 60px 50px;
+            margin-right: 0;
+            & .rankcontentRow {
+                gap: 70px 0;
+                & .rankCard {
+                    padding: 14px 18px 15px 18px;
+                    & .rankcardImg {
+                        width: 130px;
+                        height: 80px;
+                        margin-top: -60px;
+                    }
+                    & .damblerproone {
+                    }
+                    & .rankCHeading {
+                        font-size: 12px;
+                    }
+                    & .rankcount {
+                        height: 50px;
+                        width: 50px;
+                    }
+                    & .ranktitle {
+                        font-size: 9px;
+                    }
+                    & .ranktitleprice {
+                        font-size: 9px;
+                        & .us {
+                        }
+                    }
+                    & .cardline {
+                        margin: 20px 0 17px 0;
+                    }
+                    & .rankdetailmain {
+                        &.active {
+                            & .rankDetail {
+                            }
+                            & .rankDetailicon {
+                            & .checkicon {
+                                & img {
+                                }
+                            }
+                            }
+                        }
+                        & .rankDetail {
+                            font-size: 9px;
+                        }
+                        & .rankDetailicon {
+                            height: 13px;
+                            width: 13px;
+                            & .checkicon {
+                                height: 7px;
+                                width: 8px;
+                                & img {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .rankcontenttwo {
+        }
+        & .rankproMain {
+            right: 0px;
+            & .rankproline {
+                &::before {
+                }
+                &::after {
+                    height: 22px;
+                    width: 22px;
+                }
+            }
+            & .rankprogress {
+                height:32px ;
+                width: 32px;
+                border-radius: 12px;
+                & .progressicon {
+                    height: 8px;
+                    width: 14px;
+                }
+            }
+        }
+    }
+    // ********* rank section end ********
+
+    // ********* about damble section start ********
+    .aboutDambleFluid{
+        padding-right: 44px;
+        padding-bottom: 40px;
+        & .aboutDambleFluidHeading{    
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
+        & .bottomBorder{
+            width: auto;
+            &:last-child{    
+            }
+            & .subHeading{
+                font-size: 16px;
+                & span{
+                }
+            }
+            & .para{
+                font-size: 13px;
+            }
+        }
+    }
+    // ********* about damble section end ********
+
+    // ********* becomeroylty section start ********
+    .becomeroylty {
+        & .royaltyCard {
+            padding: 70px 16px 27px 32px;
+            & .royaltyHeading {
+                font-size: 35px;
+                padding-bottom: 75px;
+                & .Headingtwo {
+                }
+            }
+            & .royaltyImg {
+                width: 180px;
+                height: auto;
+            }
+            & .royaltypara {
+                font-size: 15px;
+                padding: 42px 0px 0 0px;
+            }
+            & .royaltsubheading {
+                font-size: 21px;
+                & .royaltSubHeadingTwo {
+                }
+            }
+            & .joinBtnMain {
+                padding: 45px 0 12px 0;
+                & .joinBtn {
+                    font-size: 18px;
+                    padding: 6px 27px;
+                    border-radius: 8px;
+                    &:hover {
+                    }
+                }
+            }
+            & .royaltyContent {
+                padding-top: 20px;
+                & .royaltycheckmain {
+                    height: 20px;
+                    width: 20px;
+                    & .royaltyicon {
+                        height: 13px;
+                        width: 13px;
+                    }
+                }
+                & .royaltychecktitle {
+                    font-size: 17px;
+                    padding-left: 16px;
+                }
+            }
+            & .telegramchan {
+                font-size: 13px;
+                & .telegram {
+                }
+            }
+        }
+    }
+    // ********* becomeroylty section end ********
+
+    // ********* Vip Club Page end ********
+
+
+    // ********* Promotion Page start ********
+    .promotionSection {
+        padding: 40px 0 0 0 ;
+        .PromotionPage {
+           
+        }
+        & .PromotionHeading {
+        }
+        & .promoationPills{
+            & .PromotionBtn{
+                & .activeCount {
+                }
+                &.active{
+                }
+            }
+        }
+        & .sportBtnMain {
+                & .sportBtn {   
+                    width:90%;
+                    font-size: 18px;
+                    &::before {
+                    }
+                    & .sportbtncontent {
+                    }
+                }
+        }
+        & .promotionRight {
+            padding-left: 30px;
+            &::before {
+                display: none;
+            }
+            & .promoHeading {
+            }
+            & .Promopara {
+            }
+            & .promoInputMain {
+                &::before {
+                    background:linear-gradient(164deg, rgba(85, 120, 254, 0.4) 33%, rgba(22, 31, 44, 0.4) 50%);
+                }
+                & .input-group {
+                    height: 45px;
+                    & .promoInput {
+                        &::placeholder {
+                        }
+                    }
+                    & .getnowBtn {
+                        padding: 0 25px;
+                        font-size: 16px;
+                    }
+                }
+            }
+            
+        }
+        & .promotionCardMain {
+            & .promotionCard {
+                & .promoimg {
+                    & .promodetail {
+                        & .promoCardHeading {
+                            & .promoCardHeadingtwo {
+                            }
+                        }
+                        & .promoCardpara {
+                            & .promoCardparatwo {
+                            }
+                        }  
+                    }
+                    & .promotionTag {
+                    }
+                }
+                & .promotioncardTitle {
+                    & .titletwo {
+                    }
+                    & .titlethree {
+                    }
+                }
+                & .seemore {
+                    & .seemoreBtn {
+                    }
+                }
+            }
+        }
+    }
+    // ********* Promotion Page end ********
+
+    // ********* ourparnter Page start ********
+     .ourparnterpage {
+        padding: 75px 30px 0 30px;
+        & .ourParnter {
+            & .partnerHeading {
+                font-size: 24px;
+                padding-bottom: 24px;
+            }
+            & .ourpartnerContent {
+                // gap: 15px;
+                & .partnerImg {
+                }
+                & .partnerName {
+                    font-size: 24px;
+                }
+                & .parnterinsta {
+                    height: 18px;
+                    width: 18px;
+                }
+                & .partnerDetail {
+                    font-size: 13px;
+                    padding-top: 10px;
+                    padding-bottom: 12px;
+                }
+                & .readMoreBtn {
+                    font-size: 13px;
+                }
+            }
+            & .partnerMain {
+                padding-top: 40px;
+            }
+        }
+    }
+    // ********* ourparnter Page end ********
+
+    // ********* help center Page start ********
+    .helpcenterPage {
+        padding: 40px 5px 0 5px;
+        & .helpCenter {
+            & .helpCenterHeading {
+            }
+            & .helpCenterLeft {
+                & .helpBtn {
+                    width: 190px;
+                    font-size: 11px;
+                    &:hover {
+
+                    }
+                    &.active {
+                    }
+                }
+            }
+            & .card {
+                padding: 25px 10px 60px 10px;;
+                & .helpcardHeading {
+                    font-size:20px ;
+                }
+                & .helptitleMain {
+                    & .helptitle {
+                        font-size:14px ;
+                    }
+                }
+            }
+        }
+    }
+    // ********* help center Page end ********
+}
+
+@include media-breakpoint-down(md) {
+    // tab menu section start
+    .topratedTabMain {
+        &::before {
+        }
+        & .topratedgames-tab-content {
+        & .nav-tab {
+        & .toprated-link {
+            &:hover {
+            }
+        }
+        & .toprated-link.active {
+        }
+        }
+        & .search-bar-group {
+        & .search-input {
+            &::placeholder {
+            }
+        }
+        }
+        } 
+    }
+    // tab menu section end
+
+    // toprated-games-main section start
+    .toprated-games-main {
+        // padding: 0 15px;
+        &::before {
+        display: none;
+        }
+        & .toprated-games {
+        background-color: transparent;
+        padding: 0 ;
+        & .heading {
+            font-size: 24px;
+        }
+        & .shadowball {
+            &::before {
+                left: -17px;
+                height: 18px;
+                width: 18px;
+            }
+        }
+        & .viewallMain {
+            padding-right: 100px;
+            & .viewall-btn {
+                font-size: 11px;
+                padding: 8px 10px 8px 10px;
+            }
+        }
+        & .games-card-main {
+            & .mySwiper {
+                & .games-card {
+                    & .games-information {
+                        & .games-information-icon {
+                        }
+                    }
+                    & .games-img {
+                        & .games-img-tag {
+                        }
+                    }
+                    & .games-card-title {
+                    }
+                    & .play-btn {
+                        margin-top: 19px;
+                        padding: 10px 15px;
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+        & .tab-pane {
+        }
+        }
+        & .swiper-button-next-unique {
+            height: 31px;
+            width: 30px;
+            padding:9px;
+        }
+        & .swiper-button-prev-unique {
+            height: 31px;
+            width: 31px;
+            right: 50px;
+            padding: 9px;           
+        }
+    }
+    // toprated-games-main section end
+
+    // recentWin section start
+    .recentWin {
+        margin-top: 55px;
+    }
+    // recentWin section end
+
+    // help-us section start
+    .help-us {
+        & .helpus-left {
+            & .help-us-heading {
+                font-size: 20px;
+            }
+            & .help-us-para {
+                font-size: 10px;
+            }
+            & .help-us-paratwo {
+                padding-top: 25px;
+            }
+            & .showmore-btn-main {
+                padding-top: 18px;
+                & .showmore-btn {
+                    font-size: 16px;
+                }
+            }
+        }
+        & .helpus-right {
+            padding-left: 0;
+            padding-top: 30px;
+            &::before {
+                display: none;
+            }
+            & .help-us-heading {
+                font-size: 17px;
+            }
+            & .help-us-textarea {
+                padding-top: 20px;
+                padding-bottom: 33px;
+                & .text-area {
+                    &::placeholder {
+                    }
+                }
+            }
+            & .textarea-title {
+                padding-top: 0;
+            }
+            & .leavemsg-btn {
+                font-size: 13px;
+            }
+            & .helpus-email-main {
+                padding-top: 22px;
+                padding-bottom: 13px;
+                font-size: 12px;
+                & .helpus-email {
+                }
+            }
+        }
+    }
+    // help-us section end
+
+
+    // ********* Vip Club Page Start ********
+
+    // ********* vipheroSection start ********
+    .vipheroSection {
+        &::before {
+        }
+        &::after {
+        }
+        & .vipheroMain {
+            padding: 90px 0 0 30px;
+            &::before{
+                bottom: -13rem;
+            }
+            & .heroHeading {
+                font-size: 28px;
+                & .heroHeadingtwo {
+                }
+            }
+            & .vipHorocard {
+                padding-top: 55px;
+                & .heroCardTitle {
+                    font-size: 17px;
+                    & .vip {
+                    }
+                }
+                & .cardiconone {
+                }
+                & .cardicontwo {
+                }
+                & .cardiconthree {
+                }
+                & .cardiconfour {
+                }
+                & .exclusive {
+                }
+                & .levelndrew {
+                }
+                & .playearn {
+                }
+                & .heroCardpara {
+                    font-size: 12px;
+                }
+            }
+            & .vipheroImg {
+            }
+        }
+    }
+    // ********* vipheroSection end ********
+
+    // ********* how work section start ********
+    .howWork {
+        padding-top: 50px;
+        & .howworkHeading {
+            font-size: 24px;
+        }
+        & .howorkpara {
+            font-size: 14px;
+        }
+        & .howWorkcard {
+            padding-top: 60px;
+            & .workCardMain {
+                gap: 40px;
+                & .workCard {
+                    padding: 14px 0px 19px 0px;
+                    border-radius: 7px;
+                    border: 1px solid #00990A;
+                    & .workCardImg {
+                    }
+                    & .loginIcon {
+                        width: 82px;
+                        height: 72px;
+                    }
+                    & .playIcon {
+                        width: 95px;
+                        height: 60px;
+                    }
+                    & .inreaseIcon {
+                        width: 100px;
+                        height: 60px;
+                    }
+                    & .workCardtitle {
+                        padding-top: 0;
+                        font-size: 18px;
+                    }
+                    & .workCardpara {
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+        & .workprogress {
+            padding-top: 60px;
+            & .progressMain {
+                height: 85%;
+            &::before {
+                height: 100%;
+                width: 4px;
+                left: 35%;
+                top: 0;
+                transform: translate(50%, 0);
+            }
+            & .progressBar {
+                height: 30px;
+                width: 30px;
+                font-size: 18px;
+            }
+            }
+        }
+        & .playbtnMain {
+            & .playBtn {
+                font-size: 17px;
+                padding: 13px 25px;
+            }
+        }
+    }
+    // ********* how work section end ********
+
+    // ********* rank section start ********
+    .rankSection {
+        padding-top: 105px;
+        & .rankHeading {
+            font-size: 28px;
+            & .rankHeadingtwo {
+            }
+        }
+        & .rankpara {
+            font-size: 13px;
+            padding-top: 18px;
+        }
+        & .rankcontent {
+            padding: 55px 50px 25px 50px;
+            margin-right: 0;
+            & .rankcontentRow {
+                gap: 70px 0;
+                & .rankCard {
+                    padding: 14px 13px 12px 13px;
+                    & .rankcardImg {
+                        width: 130px;
+                        height: 80px;
+                        margin-top: -60px;
+                    }
+                    & .rankcardone {
+                        max-width: 130px;
+                        max-height: 80px;
+                        margin-top: -60px;
+                    }
+                    & .rankcardtwo {
+                        max-width:75px;
+                        max-height:95px ;
+                        margin-top: -50px;
+                    }
+                    & .rankcardthree {
+                        max-width: 90px;
+                        max-height:100px ;
+                        margin-top: -55px;
+                    }
+                    & .damblerproone {
+                    }
+                    & .rankCHeading {
+                        font-size: 11px;
+                    }
+                    & .rankcount {
+                        height: 45px;
+                        width: 45px;
+                    }
+                    & .ranktitle {
+                        font-size: 8px;
+                    }
+                    & .ranktitleprice {
+                        & .us {
+                        }
+                    }
+                    & .cardline {
+                    }
+                    & .rankdetailmain {
+                        &.active {
+                            & .rankDetail {
+                            }
+                            & .rankDetailicon {
+                            & .checkicon {
+                                & img {
+                                }
+                            }
+                            }
+                        }
+                        & .rankDetail {
+                            font-size: 8px;
+                        }
+                        & .rankDetailicon {
+                            height: 12px;
+                            width: 12px;
+                            & .checkicon {
+                                height: 7px;
+                                width: 8px;
+                                & img {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .rankcontenttwo {
+        }
+        & .rankproMain {
+            right: 0px;
+            & .rankproline {
+                &::before {
+                }
+                &::after {
+                    height: 21px;
+                    width: 21px;
+                }
+            }
+            & .rankprogress {
+                height:30px ;
+                width: 30px;
+                border-radius: 12px;
+                & .progressicon {
+                    height: 6px;
+                    width: 12px;
+                }
+            }
+        }
+    }
+    // ********* rank section end ********
+
+    // ********* becomeroylty section start ********
+    .becomeroylty {
+        & .royaltyCard {
+            padding: 60px 16px 25px 32px;
+            & .royaltyHeading {
+                font-size: 30px;
+                padding-bottom: 55px;
+                & .Headingtwo {
+                }
+            }
+            & .royaltyImg {
+                width: 160px;
+                height: auto;
+            }
+            & .royaltypara {
+                font-size: 13px;
+                padding: 30px 19px 0 19px;
+            }
+            & .royaltsubheading {
+                font-size: 18px;
+                padding-top: 40px;
+                & .royaltSubHeadingTwo {
+                }
+            }
+            & .joinBtnMain {
+                padding: 40px 0 35px 0;
+                & .joinBtn {
+                    font-size: 16px;
+                    padding: 6px 26px;
+                    border-radius: 8px;
+                    &:hover {
+                    }
+                }
+            }
+            & .royaltyContent {
+                padding-top: 15px;
+                & .royaltycheckmain {
+                    height: 18px;
+                    width: 18px;
+                    & .royaltyicon {
+                        height: 13px;
+                        width: 13px;
+                    }
+                }
+                & .royaltychecktitle {
+                    font-size: 14px;
+                    padding-left: 14px;
+                }
+            }
+            & .telegramchan {
+                font-size: 12px;
+                & .telegram {
+                }
+            }
+        }
+    }
+    // ********* becomeroylty section end ********
+    // ********* Vip Club Page end ********
+
+
+    // ********* Promotion Page start ********
+    .promotionSection {
+        padding: 52px 0 0 0;
+        & .PromotionHeading {
+            font-size: 22px;
+        }
+        & .promoationPills{
+            height: 35px;
+            & .PromotionBtn{
+                width: 105px;
+                height: 33px;
+                font-size: 12px;
+                & .activeCount {
+                }
+                &.active{
+                    width: 105px;
+                    height: 33px;
+                    font-size: 12px;
+                }
+            }
+        }
+        & .sportBtnMain {
+                & .sportBtn {   
+                    width: 70%;                
+                    font-size: 15px;
+                    width: 100%;
+                    height: 44px;
+                    &::before {
+                    }
+                    & .sportbtncontent {
+
+                    }
+                }
+        }
+        & .promotionRight {
+            padding-left: 12px;
+            padding-top: 64px;
+            &::before {
+                display: none;
+            }
+            & .promoHeading {
+                font-size: 15px;
+            }
+            & .Promopara {
+                font-size: 10px;
+            }
+            & .promoInputMain {
+                padding: 1px;
+                &::before {
+                    background: linear-gradient(170deg, rgba(85, 120, 254, 0.4) 37%, rgba(22, 31, 44, 0.4) 50%);
+                    filter: blur(0.8px);
+                }
+                & .input-group {
+                    height: 41px;
+                    & .promoInput {
+                        font-size: 10px;
+                        padding: 14px 18px;
+                        &::placeholder {
+                            font-size: 10px;
+                        }
+                    }
+                    & .getnowBtn {
+                        font-size: 13px;
+                        padding: 0 25px;
+                    }
+                }
+            }
+            
+        }
+        & .promotionCardMain {
+            padding-top: 25px;
+            gap: 40px 0;
+            & .promotionCard {
+                & .promoimg {
+                    & .promodetail {
+                        padding: 20px 0 0 10px;
+                        & .promoCardHeading {
+                            font-size: 15px;
+                            line-height: normal;
+                            & .promoCardHeadingtwo {
+                            }
+                        }
+                        & .promoCardpara {
+                            font-size: 10px;
+                            & .promoCardparatwo {
+                            }
+                        }  
+                    }
+                    & .promotionTag {
+                    }
+                }
+                & .promotioncardTitle {
+                    font-size: 10px;
+                    padding-top: 15px;
+                    & .titletwo {
+                    }
+                    & .titlethree {
+                    }
+                }
+                & .seemore {
+                    padding-top: 7px;
+                    & .seemoreBtn {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+    // ********* Promotion Page end ********
+
+
+    // ********* ourparnter Page start ********
+    .ourparnterpage {
+        padding: 75px 50px 0 50px;
+        & .ourParnter {
+            & .partnerHeading {
+                font-size: 20px;
+                padding-bottom: 20px;
+            }
+            & .ourpartnerContent {
+                gap: 15px;
+                & .partnerImg {
+                }
+                & .partnerName {
+                    font-size: 20px;
+                }
+                & .parnterinsta {
+                    height: 16px;
+                    width: 16px;
+                }
+                & .partnerDetail {
+                    font-size: 12px;
+                    padding-top: 8px;
+                    padding-bottom: 10px;
+                }
+                & .readMoreBtn {
+                    font-size: 12px;
+                }
+            }
+            & .partnerMain {
+                padding-top: 40px;
+            }
+        }
+    }
+    // ********* ourparnter Page end ********
+}
+
+@include media-breakpoint-down(sm) {
+    // all section padding
+    .vipclubMain {
+        padding: 0 ;
+    }
+    .PromotionPage {
+        padding: 0 11px 0 11px;
+    }
+    // tab menu section start
+    .topratedTabMain {
+        &::before {
+        }
+        & .topratedgames-tab-content {
+            & .nav-tab {
+                & .toprated-link {
+                    &:hover {
+                    }
+                }
+            & .toprated-link.active {
+            }
+        }
+        & .search-bar-group {
+            & .search-input {
+                &::placeholder {
+                }
+            }
+        }
+        } 
+    }
+    // tab menu section end
+
+    // toprated-games-main section start
+    .toprated-games-main {
+        &::before {
+        }
+        & .toprated-games {
+            & .heading {
+                font-size: 18px;
+            }
+            & .shadowball {
+                font-size: 15px;
+                padding-left: 18px;
+                &::before {
+                    height: 12px;
+                    width: 12px;
+                    left: -2px;
+                }
+            }
+            & .viewallMain {
+                padding-right: 80px;
+                & .viewall-btn {
+                    font-size: 8px;
+                    padding: 6px 8px 6px 8px;
+                }
+            }
+            & .games-card-main {
+                & .mySwiper {
+                    & .games-card {
+                        & .games-information {
+                            & .games-information-icon {
+                            }
+                        }
+                        & .games-img {
+                            & .games-img-tag {
+                                font-size:7px;
+                            }
+                        }
+                        & .games-card-title {
+                        }
+                        & .play-btn {
+                            font-size: 10px;
+                            padding: 8px 9px;
+                        }
+                    }
+                }
+            }
+            & .tab-pane {
+            }
+            & .swiper-button-next-unique {
+                height: 25px;
+                width: 25px;
+                padding: 7px;
+            }
+            & .swiper-button-prev-unique {
+                height: 25px;
+                width: 25px;
+                right: 45px;
+                padding: 7px;
+            }
+        }
+    }
+    // toprated-games-main section end
+
+    // recentWin section start
+    .recentWin {
+        margin-top: 45px;
+    }
+    // recentWin section end
+
+    // help-us section start
+    .help-us {
+        & .helpus-left {
+            & .help-us-heading {
+                font-size: 17px;
+            }
+            & .help-us-para {
+                font-size: 9px;
+            }
+            & .help-us-paratwo {
+                padding-top: 23px;
+            }
+            & .showmore-btn-main {
+                padding-top: 14px;
+                & .showmore-btn {
+                    font-size: 12px;
+                }
+            }
+        }
+        & .helpus-right {
+            padding-top: 26px;
+            & .help-us-heading {
+                font-size: 17px;
+            }
+            & .help-us-textarea {
+                padding-top: 20px;
+                padding-bottom: 33px;
+                & .text-area {
+                    &::placeholder {
+                    }
+                }
+            }
+            & .textarea-title {
+            }
+            & .leavemsg-btn {
+                font-size: 13px;
+            }
+            & .helpus-email-main {
+                padding-top: 19px;
+                padding-bottom: 10px;
+                font-size: 12px;
+                & .helpus-email {
+                }
+            }
+        }
+    }
+    // help-us section end
+
+
+
+    // ********* Vip Club Page Start ********
+    
+    // ********* vipheroSection start ********
+    .vipheroSection {
+        &::before {
+        }
+        &::after {
+        }
+        & .vipheroMain {
+            padding: 80px 0 0 0;
+            &::before{
+                height: 64%;
+                bottom: -5rem;
+                background-size: cover;
+            }
+            & .heroHeading {
+                font-size: 23px;
+                & .heroHeadingtwo {
+                }
+            }
+            & .vipHorocard {
+                padding-top: 49px;
+                & .heroCardTitle {
+                    font-size: 15px;
+                    & .vip {
+                    }
+                }
+                & .cardiconone {
+                    width: 41px;
+                    height: 35px;
+                }
+                & .cardicontwo {
+                    width: 34px;
+                    height: 36px;
+                }
+                & .cardiconthree {
+                    width: 42px;
+                    height: 36px;
+                }
+                & .cardiconfour {
+                    width: 42px;
+                    height: 36px;
+                }
+                & .exclusive {
+                    padding-left: 22px;
+                }
+                & .levelndrew {
+                    padding-left: 16px;
+                }
+                & .playearn {
+                    padding-left: 17px;
+                }
+                & .heroCardpara {
+                    font-size: 10px;
+                }
+            }
+            & .vipheroImg {
+            }
+        }
+    }
+    // ********* vipheroSection end ********
+
+    // ********* how work section start ********
+    .howWork {
+        padding-top: 24px;
+        &::before {
+            display: block;
+        }
+        &::after {
+            display: block;
+        }
+        & .howworkHeading {
+            font-size: 20px;
+        }
+        & .howorkpara {
+            font-size: 10px;
+        }
+        & .howWorkcard {
+            padding-top: 40px;
+            & .workCardMain {
+                gap: 34px;
+                & .workCard {
+                    padding: 11px 0px 16px 0px;
+                    border-radius: 5px;
+                    border: 0.5px solid #00990A;
+                    & .workCardImg {
+                    }
+                    & .loginIcon {
+                        width: 62px;
+                        height: 52px;
+                    }
+                    & .playIcon {
+                        width: 75px;
+                        height: 50px;
+                    }
+                    & .inreaseIcon {
+                        width: 75px;
+                        height: 50px;
+                    }
+                    & .workCardtitle {
+                        padding-top: 0;
+                        font-size: 16px;
+                    }
+                    & .workCardpara {
+                        font-size: 8px;
+                    }
+                }
+            }
+        }
+        & .workprogress {
+            padding-top: 40px;
+            & .progressMain {
+                height: 85%;
+            &::before {
+                height: 100%;
+                width: 4px;
+                left: 35%;
+                top: 0;
+                transform: translate(50%, 0);
+            }
+            & .progressBar {
+                height: 21px;
+                width: 21px;
+                font-size: 12px;
+            }
+            }
+        }
+        & .playbtnMain {
+            & .playBtn {
+                font-size: 15px;
+                padding: 9px 15px;
+                border-radius: 5px;
+            }
+        }
+    }
+    // ********* how work section end ********
+
+    // ********* rank section start ********
+    .rankSection {
+        padding-top: 97px;
+        & .rankHeading {
+            font-size: 23px;
+            & .rankHeadingtwo {
+            }
+        }
+        & .rankpara {
+            font-size: 10px;
+            padding-top: 18px;
+        }
+        & .rankcontent {
+            padding: 45px 80px 20px 60px;
+            margin-right: 0;
+            border-radius: 10px;
+            & .rankcontentRow {
+                gap: 65px;
+                & .rankCard {
+                    padding: 14px 13px 12px 13px;
+                    border-radius: 7px;
+                    border: 1px solid #00990a;
+                    & .rankcardone {
+                        width: 117px;
+                        height: 70px;
+                        margin-top: -60px;
+                    }
+                    & .damblerproone {
+                    }
+                    & .rankCHeading {
+                        font-size: 10px;
+                    }
+                    & .rankcount {
+                        height: 40px;
+                        width: 40px;
+                    }
+                    & .ranktitle {
+                        font-size: 7px;
+                    }
+                    & .ranktitleprice {
+                        font-size: 8px;
+                        & .us {
+                        }
+                    }
+                    & .cardline {
+                        margin: 16px 0 13px 0;
+                    }
+                    & .rankdetailmain {
+                        &.active {
+                            & .rankDetail {
+                            }
+                            & .rankDetailicon {
+                            & .checkicon {
+                                & img {
+                                }
+                            }
+                            }
+                        }
+                        & .rankDetail {
+                            font-size: 7px;
+                        }
+                        & .rankDetailicon {
+                            height: 10px;
+                            width: 10px;
+                            & .checkicon {
+                                height: 7px;
+                                width: 7px;
+                                & img {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .rankcontenttwo {
+        }
+        & .rankproMain {
+            right: 44px;
+            & .rankproline {
+                &::before {
+                    background-color: #014105;
+                    width: 6px;
+                }
+                &::after {
+                    height: 21px;
+                    width: 21px;
+                }
+            }
+            & .rankprogress {
+                height:27px ;
+                width: 26px;
+                border-radius: 10px;
+                & .progressicon {
+                    height: 6px;
+                    width: 12px;
+                }
+            }
+        }
+    }
+    // ********* rank section end ********
+
+    // ********* becomeroylty section start ********
+    .becomeroylty {
+        & .royaltyCard {
+            padding: 57px 36px 34px 36px;
+            border-radius: 10px;
+            & .royaltyHeading {
+                font-size: 20px;
+                padding-bottom: 33px;
+                & .Headingtwo {
+                }
+            }
+            & .royaltyImg {
+                width: 104px;
+                height: 64px;
+            }
+            & .royaltypara {
+                font-size: 10px;
+                padding: 19px 15px 0 15px;
+            }
+            & .royaltsubheading {
+                font-size: 15px;
+                padding-top: 64px;
+                & .royaltSubHeadingTwo {
+                }
+            }
+            & .joinBtnMain {
+                padding: 34px 0 53px 0;
+                & .joinBtn {
+                    font-size: 13px;
+                    padding: 5px 20px;
+                    border-radius: 5px;
+                    &:hover {
+                    }
+                }
+            }
+            & .royaltyContent {
+                padding-top: 10px;
+                & .royaltycheckmain {
+                    height: 12px;
+                    width: 12px;
+                    & .royaltyicon {
+                        height: 9px;
+                        width: 9px;
+                    }
+                }
+                & .royaltychecktitle {
+                    font-size: 11px;
+                    padding-left: 14px;
+                }
+            }
+            & .telegramchan {
+                font-size: 10px;
+                & .telegram {
+                }
+            }
+        }
+    }
+    // ********* becomeroylty section end ********
+
+    // ********* about damble section start ********
+    .aboutDambleFluid{
+        & .aboutDambleFluidHeading{    
+        }
+        & .bottomBorder{
+            &:last-child{    
+            }
+            & .subHeading{
+                & span{
+                }
+            }
+            & .para{
+            }
+        }
+    }
+    // ********* about damble section end ********
+
+    // ********* Vip Club Page end ********
+
+
+
+    // ********* Promotion Page start ********
+    .promotionSection {
+        padding: 52px 0 0 0;
+        & .PromotionHeading {
+            font-size: 20px;
+        }
+        & .promoationPills{
+            width: 147.794px;
+            height: 22.81px;
+            & .PromotionBtn{
+                width: 78.887px;
+                height: 22.81px;
+                font-size: 12px;
+                & .activeCount {
+                }
+                &.active{
+                    width: 78.887px;
+                    height: 22.81px;
+                    font-size: 12px;
+                }
+            }
+        }
+        & .sportBtnMain {
+            & .sportBtn {   
+                    width: 100%;                
+                    font-size: 15px;
+                    height: 44px;
+                    border-radius: 4px;
+                    &::before {
+                    }
+                    & .sportbtncontent {
+                       
+                    }
+            }
+        }
+        & .promotionRight {
+            padding-left: 12px;
+            padding-top: 64px;
+            &::before {
+                display: none;
+            }
+            & .promoHeading {
+                font-size: 15px;
+            }
+            & .Promopara {
+                font-size: 10px;
+            }
+            & .promoInputMain {
+                padding: 1px;
+                &::before {
+                    background: linear-gradient(170deg, rgba(85, 120, 254, 0.4) 37%, rgba(22, 31, 44, 0.4) 50%);
+                    filter: blur(0.8px);
+                }
+                & .input-group {
+                    height: 41px;
+                    & .promoInput {
+                        font-size: 10px;
+                        padding: 14px 18px;
+                        &::placeholder {
+                            font-size: 10px;
+                        }
+                    }
+                    & .getnowBtn {
+                        font-size: 13px;
+                        padding: 0 25px;
+                    }
+                }
+            }
+            
+        }
+        & .promotionCardMain {
+            padding-top: 25px;
+            gap: 40px;
+            & .promotionCard {
+                & .promoimg {
+                    & .promodetail {
+                        padding: 30px 0 0 20px;
+                        & .promoCardHeading {
+                            font-size: 16px;
+                            & .promoCardHeadingtwo {
+                            }
+                        }
+                        & .promoCardpara {
+                            font-size: 10px;
+                            & .promoCardparatwo {
+                            }
+                        }  
+                    }
+                    & .promotionTag {
+                    }
+                }
+                & .promotioncardTitle {
+                    font-size: 10px;
+                    padding-top: 15px;
+                    & .titletwo {
+                    }
+                    & .titlethree {
+                    }
+                }
+                & .seemore {
+                    padding-top: 7px;
+                    & .seemoreBtn {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+    // ********* Promotion Page end ********
+
+
+    // ********* ourparnter Page start ********
+    .ourparnterpage {
+        padding: 75px 11px 0 11px;
+        & .ourParnter {
+            & .partnerHeading {
+                font-size: 17px;
+                padding-bottom: 20px;
+            }
+            & .ourpartnerContent {
+                gap: 20px;
+                & .partnerImg {
+                }
+                & .partnerName {
+                    font-size: 15px;
+                    color: #FFF;
+                }
+                & .parnterinsta {
+                    height: 13px;
+                    width: 13px;
+                }
+                & .partnerDetail {
+                    font-size: 9px;
+                    padding-top: 8px;
+                    padding-bottom: 13px;
+                }
+                & .readMoreBtn {
+                    font-size: 9px;
+                }
+            }
+            & .partnerMain {
+                padding-top: 45px;
+            }
+        }
+    }
+    // ********* ourparnter Page end ********
+
+
+    // ********* help center Page start ********
+    .helpcenterPage {
+        & .helpCenter {
+            & .helpCenterHeading {
+                & .helpIcon {
+                    max-width: 20px;
+                    max-height: 20px;
+                }
+            }
+            & .helpCenterLeft {
+                & .helpBtn {
+                    &:hover {
+                    }
+                    &.active {
+                    }
+                }
+            }
+            & .card {
+                & .helpcardHeading {
+                }
+                & .helptitleMain {
+                    & .helptitle {
+                    }
+                }
+            }
+            
+            // accordion btn
+            & .helpAccordion {
+                & .helppagebtn {
+                    font-size: 12px;
+                    height: 35px;
+                    &::after {
+                    }
+                    &:not(.collapsed) {
+                    }
+                }
+                & .helpbtnContent {
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+    // ********* help center Page end ********
+
+}
+
+@media (max-width :430px) {
+    // ********* Vip Club Page Start ********
+    
+    // ********* vipheroSection start ********
+    .vipheroSection {
+       
+        &::before {
+        }
+        &::after {
+        }
+        & .vipheroMain {
+            padding-top: 55px;
+            &::before{
+            }
+            & .heroHeading {
+                & .heroHeadingtwo {
+                }
+            }
+            & .vipHorocard {
+                & .heroCardTitle {
+                    & .vip {
+                    }
+                }
+                & .cardiconone {
+                }
+                & .cardicontwo {
+                }
+                & .cardiconthree {
+                }
+                & .cardiconfour {
+                }
+                & .exclusive {
+                }
+                & .levelndrew {
+                }
+                & .playearn {
+                }
+                & .heroCardpara {
+                }
+            }
+            & .vipheroImg {
+            }
+        }
+    }
+    // ********* vipheroSection end ********
+
+    // ********* how work section start ********
+    .howWork {
+        &::before {
+        }
+        &::after {
+        }
+        & .howworkHeading {
+        }
+        & .howorkpara {
+        }
+        & .howWorkcard {
+            & .workCardMain {
+                & .workCard {
+                    & .workCardImg {
+                    }
+                    & .loginIcon {
+
+                    }
+                    & .playIcon {
+                    }
+                    & .inreaseIcon {
+                    }
+                    & .workCardtitle {
+                    }
+                    & .workCardpara {
+                    }
+                }
+            }
+        }
+        & .workprogress {
+            & .progressMain {
+            &::before {
+            }
+            & .progressBar {
+            }
+            }
+        }
+        & .playbtnMain {
+            & .playBtn {
+            }
+        }
+    }
+    // ********* how work section end ********
+
+    // ********* rank section start ********
+    .rankSection {
+        & .rankHeading {
+            & .rankHeadingtwo {
+            }
+        }
+        & .rankpara {
+        }
+        & .rankcontent {
+            padding: 45px 60px 20px 35px;;
+            & .rankcontentRow {
+                & .rankCard {
+                    & .rankcardImg {
+                    }
+                    & .damblerproone {
+                    }
+                    & .rankCHeading {
+                    }
+                    & .rankcount {
+                    }
+                    & .ranktitle {
+                    }
+                    & .ranktitleprice {
+                        & .us {
+                        }
+                    }
+                    & .cardline {
+                    }
+                    & .rankdetailmain {
+                        &.active {
+                            & .rankDetail {
+                            }
+                            & .rankDetailicon {
+                            & .checkicon {
+                                & img {
+                                }
+                            }
+                            }
+                        }
+                        & .rankDetail {
+                        }
+                        & .rankDetailicon {
+                            & .checkicon {
+                                & img {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .rankcontenttwo {
+        }
+        & .rankproMain {
+            right: 30px;
+            & .rankproline {
+                &::before {
+                }
+                &::after {
+                }
+            }
+            & .rankprogress {
+                & .progressicon {
+                }
+            }
+        }
+    }
+    // ********* rank section end ********
+
+    // ********* becomeroylty section start ********
+    .becomeroylty {
+        & .royaltyCard {
+            & .royaltyHeading {
+                & .Headingtwo {
+                }
+            }
+            & .royaltyImg {
+            }
+            & .royaltypara {
+            }
+            & .royaltsubheading {
+                & .royaltSubHeadingTwo {
+                }
+            }
+            & .joinBtnMain {
+                & .joinBtn {
+                    &:hover {
+                    }
+                }
+            }
+            & .royaltyContent {
+                & .royaltycheckmain {
+                    & .royaltyicon {
+                    }
+                }
+                & .royaltychecktitle {
+                }
+            }
+            & .telegramchan {
+                & .telegram {
+                }
+            }
+        }
+    }
+    // ********* becomeroylty section end ********
+
+    // ********* about damble section start ********
+    .aboutDambleFluid{
+        & .aboutDambleFluidHeading{    
+        }
+        & .bottomBorder{
+            &:last-child{    
+            }
+            & .subHeading{
+                & span{
+                }
+            }
+            & .para{
+            }
+        }
+    }
+    // ********* about damble section end ********
+
+    // ********* Vip Club Page end ********
+}
+
+
+
+
+

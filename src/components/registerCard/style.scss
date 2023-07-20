@@ -1,0 +1,1016 @@
+@import './../../index.scss';
+
+.lp-cardSection {
+    padding: 70px 0px 80px;
+
+    & .cardInner {
+        & .card {
+            position: relative;
+            z-index: -2;
+            // max-width: 556px;
+            width: 100%;
+            height: 360px;
+            border-radius: 30px;
+            margin: auto;
+            border: none;
+
+            & .cardBg {
+                background: #0D131C;
+                border-radius: 30px;
+                overflow: hidden;
+                z-index: 2;
+                padding: 41px 33px 23px;
+
+                & .cardheading {
+                    & .cardHeadingImg {
+                        width: 26.19px;
+                        height: 26.13px;
+                        margin-right: 22.62px;
+                        display: flex;
+
+                        & img {
+                            aspect-ratio: 10/10;
+                            object-fit: contain;
+                        }
+                    }
+
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 30px;
+                    line-height: 37px;
+                    color: #FFFFFF;
+                    text-transform: uppercase;
+                }
+
+                & .cardPara {
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 15px;
+                    line-height: 18px;
+                    text-transform: uppercase;
+                    color: #93ACD3
+                }
+
+                &.card1 {
+                    background-image: url('../../assets/picture/blueBg.svg');
+                    width: 100%;
+                    height: 100%;
+                    background-position: top right;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        background-image: url('../../assets/picture/card1Group.png');
+                        top: 0;
+                        left: 0;
+                        // background-position: top center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        // background-color: black;
+                        z-index: -1;
+                        border-radius: 30px;
+                    }
+                }
+
+                &.card2 {
+                    background-image: url('../../assets/picture/greenBg.svg');
+                    width: 100%;
+                    height: 100%;
+                    background-position: top right;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-color: #161F2C;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        background-image: url('../../assets/picture/DesktopCard2Bg.png');
+                        top: 0;
+                        left: 0;
+                        background-position: bottom right;
+                        background-repeat: no-repeat;
+                        background-size: initial;
+                        // background-color: black;
+                        z-index: -1;
+                        border-radius: 30px;
+                    }
+                }
+            }
+
+            &.cardOuterBg1 {
+
+                padding: 2px;
+                background: linear-gradient(149deg, #5578FE -10%, #0D131C 60%);
+                overflow: hidden;
+            }
+
+            &.cardOuterBg2 {
+                padding: 2px;
+                background: linear-gradient(149deg, #00990A -10%, #0D131C 60%);
+                overflow: hidden;
+            }
+        }
+
+        & .cardButton {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 23px;
+            line-height: 28px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            padding: 9px 0px;
+
+            &.cardButtonBg1 {
+                background-image: conic-gradient(from 0deg at 50% 50%, #190441 0deg, rgba(217, 217, 217, 0) 360deg);
+                border-radius: 8px;
+                background-color: #6324D7;
+                cursor: pointer;
+            }
+
+            &.cardButtonBg2 {
+                border-radius: 8px;
+                background-image: conic-gradient(from 0deg at 50% 50%, #006407 0deg, rgba(217, 217, 217, 0) 360deg);
+                background-color: #00990A;
+                cursor: pointer;
+
+            }
+        }
+    }
+
+    .lp-cardSection2 {
+        & .card2Inner {
+            & .cardSection2Body {
+                & .cardSection2Content {
+                    & span {}
+                }
+
+                & .cardSection2Img {
+                    & img {}
+
+                    &.cardSectionImg1 {}
+
+                    &.cardSectionImg2 {}
+
+                    &.cardSectionImg3 {}
+                }
+            }
+        }
+    }
+}
+
+.lp-cardSection2 {
+    padding-bottom: 90px;
+
+    & .card2Inner {
+        padding: 2px;
+        background: linear-gradient(149deg, #5578FE -110%, #0D131C 60%);
+        overflow: hidden;
+        border-radius: 18px;
+
+        & .cardSection2Body {
+            height: 224px;
+            padding: 0px 60px 0px 40px;
+            background: #161F2C;
+            // filter: blur(0.5px);
+            border-radius: 18px;
+
+            & .cardSection2Content {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 37px;
+                display: flex;
+                align-items: flex-end;
+                font-variant: all-small-caps;
+                color: #FFFFFF;
+
+                & span {
+                    color: #FFD700;
+                    display: contents;
+                }
+            }
+
+            & .cardSection2Img {
+                display: flex;
+
+                & img {
+                    // aspect-ratio: 10/10;
+                    // object-fit: contain;
+                }
+
+                &.cardSectionImg1 {
+                    height: 134px;
+                }
+
+                &.cardSectionImg2 {
+                    height: 89px;
+                }
+
+                &.cardSectionImg3 {
+                    height: 139px;
+                }
+            }
+        }
+    }
+
+    .lp-cardSection2 {
+        & .card2Inner {
+            & .cardSection2Body {
+                & .cardSection2Content {
+                    & span {}
+                }
+
+                & .cardSection2Img {
+                    & img {}
+
+                    &.cardSectionImg1 {}
+
+                    &.cardSectionImg2 {}
+
+                    &.cardSectionImg3 {}
+                }
+            }
+        }
+    }
+}
+
+
+@include media-breakpoint-up(sm) {
+    .lp-cardSection {
+        & .cardInner {
+            & .card {
+                & .cardBg {
+                    & .cardheading {
+                        & .cardHeadingImg {
+                            & img {}
+                        }
+                    }
+
+                    & .cardPara {}
+
+                    &.card1 {
+                        &::before {}
+                    }
+
+                    &.card2 {
+                        &::before {}
+                    }
+                }
+
+                &.cardOuterBg1 {}
+
+                &.cardOuterBg2 {}
+            }
+
+            & .cardButton {
+                &.cardButtonBg1 {}
+
+                &.cardButtonBg2 {}
+            }
+        }
+    }
+
+    .lp-cardSection2 {
+        & .card2Inner {
+            & .cardSection2Body {
+                & .cardSection2Content {
+                    & span {}
+                }
+
+                & .cardSection2Img {
+                    & img {}
+
+                    &.cardSectionImg1 {}
+
+                    &.cardSectionImg2 {}
+
+                    &.cardSectionImg3 {}
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .lp-cardSection {
+        & .cardInner {
+            & .card {
+                & .cardBg {
+                    & .cardheading {
+                        & .cardHeadingImg {
+                            & img {}
+                        }
+                    }
+
+                    & .cardPara {}
+
+                    &.card1 {
+                        &::before {}
+                    }
+
+                    &.card2 {
+                        &::before {}
+                    }
+                }
+
+                &.cardOuterBg1 {}
+
+                &.cardOuterBg2 {}
+            }
+
+            & .cardButton {
+                &.cardButtonBg1 {}
+
+                &.cardButtonBg2 {}
+            }
+        }
+    }
+
+    .lp-cardSection2 {
+        & .card2Inner {
+            & .cardSection2Body {
+                & .cardSection2Content {
+                    & span {}
+                }
+
+                & .cardSection2Img {
+                    & img {}
+
+                    &.cardSectionImg1 {}
+
+                    &.cardSectionImg2 {}
+
+                    &.cardSectionImg3 {}
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .lp-cardSection {
+        & .cardInner {
+            & .card {
+                & .cardBg {
+                    & .cardheading {
+                        & .cardHeadingImg {
+                            & img {}
+                        }
+                    }
+
+                    & .cardPara {}
+
+                    &.card1 {
+                        &::before {}
+                    }
+
+                    &.card2 {
+                        &::before {}
+                    }
+                }
+
+                &.cardOuterBg1 {}
+
+                &.cardOuterBg2 {}
+            }
+
+            & .cardButton {
+                &.cardButtonBg1 {}
+
+                &.cardButtonBg2 {}
+            }
+        }
+    }
+
+    .lp-cardSection2 {
+        & .card2Inner {
+            & .cardSection2Body {
+                & .cardSection2Content {
+                    & span {}
+                }
+
+                & .cardSection2Img {
+                    & img {}
+
+                    &.cardSectionImg1 {}
+
+                    &.cardSectionImg2 {}
+
+                    &.cardSectionImg3 {}
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    .lp-cardSection {
+        & .cardInner {
+            & .card {
+                & .cardBg {
+                    & .cardheading {
+                        & .cardHeadingImg {
+                            & img {}
+                        }
+                    }
+
+                    & .cardPara {}
+
+                    &.card1 {
+                        &::before {}
+                    }
+
+                    &.card2 {
+                        &::before {}
+                    }
+                }
+
+                &.cardOuterBg1 {}
+
+                &.cardOuterBg2 {}
+            }
+
+            & .cardButton {
+                &.cardButtonBg1 {}
+
+                &.cardButtonBg2 {}
+            }
+        }
+    }
+
+    .lp-cardSection2 {
+        & .card2Inner {
+            & .cardSection2Body {
+                & .cardSection2Content {
+                    & span {}
+                }
+
+                & .cardSection2Img {
+                    & img {}
+
+                    &.cardSectionImg1 {}
+
+                    &.cardSectionImg2 {}
+
+                    &.cardSectionImg3 {}
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(xxl) {
+    .lp-cardSection {
+        & .cardInner {
+            & .card {
+                & .cardBg {
+                    & .cardheading {
+                        & .cardHeadingImg {
+                            & img {}
+                        }
+                    }
+
+                    & .cardPara {}
+
+                    &.card1 {
+                        &::before {}
+                    }
+
+                    &.card2 {
+                        &::before {}
+                    }
+                }
+
+                &.cardOuterBg1 {}
+
+                &.cardOuterBg2 {}
+            }
+
+            & .cardButton {
+                &.cardButtonBg1 {}
+
+                &.cardButtonBg2 {}
+            }
+        }
+    }
+
+    .lp-cardSection2 {
+        & .card2Inner {
+            & .cardSection2Body {
+                & .cardSection2Content {
+                    & span {}
+                }
+
+                & .cardSection2Img {
+                    & img {}
+
+                    &.cardSectionImg1 {}
+
+                    &.cardSectionImg2 {}
+
+                    &.cardSectionImg3 {}
+                }
+            }
+        }
+    }
+}
+
+
+@include media-breakpoint-down(xxl) {
+    .lp-cardSection {
+        & .cardInner {
+            & .card {
+                & .cardBg {
+                    & .cardheading {
+                        & .cardHeadingImg {
+                            & img {}
+                        }
+                    }
+
+                    & .cardPara {}
+
+                    &.card1 {
+                        &::before {}
+                    }
+
+                    &.card2 {
+                        &::before {}
+                    }
+                }
+
+                &.cardOuterBg1 {}
+
+                &.cardOuterBg2 {}
+            }
+
+            & .cardButton {
+                &.cardButtonBg1 {}
+
+                &.cardButtonBg2 {}
+            }
+        }
+    }
+
+    .lp-cardSection2 {
+        & .card2Inner {
+            & .cardSection2Body {
+                & .cardSection2Content {
+                    & span {}
+                }
+
+                & .cardSection2Img {
+                    & img {}
+
+                    &.cardSectionImg1 {}
+
+                    &.cardSectionImg2 {}
+
+                    &.cardSectionImg3 {}
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(xl) {
+    .lp-cardSection {
+        & .cardInner {
+            & .card {
+                height: 300px;
+
+                & .cardBg {
+                    & .cardheading {
+                        font-size: 24px;
+
+                        & .cardHeadingImg {
+                            & img {}
+                        }
+                    }
+
+                    & .cardPara {}
+
+                    &.card1 {
+                        &::before {}
+                    }
+
+                    &.card2 {
+                        &::before {
+
+                            background-size: contain;
+                            background-image: url('../../assets/picture/mobileCard2Bg.png');
+                        }
+                    }
+                }
+
+                &.cardOuterBg1 {}
+
+                &.cardOuterBg2 {}
+            }
+
+            & .cardButton {
+
+                font-size: 18px;
+
+                &.cardButtonBg1 {}
+
+                &.cardButtonBg2 {}
+            }
+        }
+    }
+
+    .lp-cardSection2 {
+        & .card2Inner {
+            & .cardSection2Body {
+                height: 164px;
+
+                & .cardSection2Content {
+                    font-size: 25px;
+                    line-height: 26px;
+
+                    & span {}
+                }
+
+                & .cardSection2Img {
+                    & img {}
+
+                    &.cardSectionImg1 {
+                        height: 80px;
+                    }
+
+                    &.cardSectionImg2 {
+                        height: 60px;
+                    }
+
+                    &.cardSectionImg3 {
+                        height: 80px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .lp-cardSection {
+        padding: 40px 0px 40px 0px;
+
+        & .cardInner {
+            & .card {
+                height: 240px;
+
+                & .cardBg {
+                    padding: 15px 20px;
+
+                    & .cardheading {
+                        font-size: 18px;
+
+                        & .cardHeadingImg {
+                            width: 22px;
+                            height: 22px;
+                            margin-right: 18px;
+
+                            & img {}
+                        }
+                    }
+
+                    & .cardPara {}
+
+                    &.card1 {
+                        &::before {
+                            background-position: bottom;
+                            background-size: contain;
+                        }
+                    }
+
+                    &.card2 {
+                        &::before {}
+                    }
+                }
+
+                &.cardOuterBg1 {}
+
+                &.cardOuterBg2 {}
+            }
+
+            & .cardButton {
+                font-size: 14px;
+                padding: 6px 0px;
+
+                &.cardButtonBg1 {}
+
+                &.cardButtonBg2 {}
+            }
+        }
+    }
+
+    .lp-cardSection2 {
+        padding-bottom: 40px;
+
+        & .card2Inner {
+            & .cardSection2Body {
+                height: 124px;
+                padding: 0px 14px 0px 20px;
+
+                & .cardSection2Content {
+                    font-size: 20px;
+                    line-height: 22px;
+
+                    & span {}
+                }
+
+                & .cardSection2Img {
+                    & img {}
+
+                    &.cardSectionImg1 {
+                        height: 60px;
+                    }
+
+                    &.cardSectionImg2 {
+                        height: 40px;
+                    }
+
+                    &.cardSectionImg3 {
+                        height: 60px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .lp-cardSection {
+        padding: 40px 0px 40px;
+
+        & .cardInner {
+            & .card {
+                // width: 367px;
+                height: 200px;
+
+                & .cardBg {
+                    & .cardheading {
+                        font-size: 14px;
+
+                        & .cardHeadingImg {
+                            width: 20px;
+                            height: 20px;
+                            margin-right: 12px;
+
+                            & img {}
+                        }
+                    }
+
+                    & .cardPara {
+                        font-size: 12px;
+                    }
+
+                    &.card1 {
+                        &::before {
+                            // background-size: cover;
+                        }
+                    }
+
+                    &.card2 {
+                        &::before {}
+                    }
+                }
+
+                &.cardOuterBg1 {}
+
+                &.cardOuterBg2 {}
+            }
+
+            & .cardButton {
+                padding: 4px 0px;
+                font-size: 12px;
+
+                &.cardButtonBg1 {}
+
+                &.cardButtonBg2 {}
+            }
+        }
+    }
+
+    .lp-cardSection2 {
+        padding-bottom: 40px;
+
+        & .card2Inner {
+            & .cardSection2Body {
+                height: 98px;
+
+                & .cardSection2Content {
+                    font-size: 16px;
+                    line-height: 18px;
+
+                    & span {}
+                }
+
+                & .cardSection2Img {
+                    & img {}
+
+                    &.cardSectionImg1 {
+                        height: 44px;
+                    }
+
+                    &.cardSectionImg2 {
+                        height: 38px;
+                    }
+
+                    &.cardSectionImg3 {
+                        height: 44px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .lp-cardSection {
+        padding: 27px 0px 46px;
+
+        & .cardInner {
+            & .card {
+                height: 240px;
+
+                & .cardBg {
+                    padding: 24px 22px 15px;
+
+                    & .cardheading {
+                        font-size: 15px;
+                        line-height: 18px;
+
+                        & .cardHeadingImg {
+                            width: 18px;
+                            height: 18px;
+                            margin-right: 11px;
+
+                            & img {}
+                        }
+                    }
+
+                    & .cardPara {
+                        font-size: 10px;
+                    }
+
+                    &.card1 {
+                        &::before {
+                            background-size: cover;
+                        }
+                    }
+
+                    &.card2 {
+                        &::before {
+                            // background-size: cover;
+                        }
+                    }
+                }
+
+                &.cardOuterBg1 {}
+
+                &.cardOuterBg2 {}
+            }
+
+            & .cardButton {
+                font-size: 16px;
+                line-height: 20px;
+                padding: 6px 0px;
+
+                &.cardButtonBg1 {}
+
+                &.cardButtonBg2 {
+                    background-image: conic-gradient(from 0deg at 50% 50%, #022F05 0deg, rgba(217, 217, 217, 0) 360deg);
+                    background-color: #00990A;
+                }
+            }
+        }
+    }
+
+    .lp-cardSection2 {
+        padding-bottom: 38px;
+
+        & .card2Inner {
+            & .cardSection2Body {
+                padding: 0px 14px;
+                min-height: 84px;
+
+                & .cardSection2Content {
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 12px;
+                    line-height: 15px;
+                    display: flex;
+                    align-items: flex-end;
+                    font-variant: all-small-caps;
+                    color: #FFFFFF;
+
+                    & span {}
+                }
+
+                & .cardSection2Img {
+                    & img {}
+
+                    &.cardSectionImg1 {
+                        height: 47px;
+                    }
+
+                    &.cardSectionImg2 {
+                        height: 32px;
+                        // width: 72px;
+                    }
+
+                    &.cardSectionImg3 {
+                        height: 52px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media (max-width: 390.99px) {
+    .lp-cardSection {
+        & .cardInner {
+            & .card {
+                & .cardBg {
+                    & .cardheading {
+                        & .cardHeadingImg {
+                            & img {}
+                        }
+                    }
+
+                    & .cardPara {}
+
+                    &.card1 {
+                        &::before {}
+                    }
+
+                    &.card2 {
+                        &::before {}
+                    }
+                }
+
+                &.cardOuterBg1 {}
+
+                &.cardOuterBg2 {}
+            }
+
+            & .cardButton {
+                &.cardButtonBg1 {}
+
+                &.cardButtonBg2 {}
+            }
+        }
+    }
+
+    .lp-cardSection2 {
+        & .card2Inner {
+            & .cardSection2Body {
+                height: max-content;
+
+                & .cardSection2Content {
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 12px;
+                    line-height: 15px;
+                    display: flex;
+                    align-items: flex-end;
+                    font-variant: all-small-caps;
+                    width: 150px;
+                    // color: #FFFFFF;
+                    // color: #190441;
+
+                    & span {}
+                }
+
+                & .cardSection2Img {
+                    & img {}
+
+                    &.cardSectionImg1 {}
+
+                    &.cardSectionImg2 {
+                        // width: 72px;
+                    }
+
+                    &.cardSectionImg3 {}
+                }
+            }
+        }
+    }
+}

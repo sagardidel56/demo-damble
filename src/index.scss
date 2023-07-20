@@ -1,0 +1,274 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./assets/fonts/Montserrat-Black.woff2') format('woff2'),
+    url('./assets/fonts/Montserrat-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./assets/fonts/Montserrat-ExtraBold.woff2') format('woff2'),
+    url('./assets/fonts/Montserrat-ExtraBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./assets/fonts/Montserrat-Bold.woff2') format('woff2'),
+    url('./assets/fonts/Montserrat-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./assets/fonts/Montserrat-BoldItalic.woff2') format('woff2'),
+    url('./assets/fonts/Montserrat-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./assets/fonts/Montserrat-ExtraBoldItalic.woff2') format('woff2'),
+    url('./assets/fonts/Montserrat-ExtraBoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./assets/fonts/Montserrat-BlackItalic.woff2') format('woff2'),
+    url('./assets/fonts/Montserrat-BlackItalic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./assets/fonts/Montserrat-Italic.woff2') format('woff2'),
+    url('./assets/fonts/Montserrat-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./assets/fonts/Montserrat-ExtraLight.woff2') format('woff2'),
+    url('./assets/fonts/Montserrat-ExtraLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./assets/fonts/Montserrat-ExtraLightItalic.woff2') format('woff2'),
+    url('./assets/fonts/Montserrat-ExtraLightItalic.woff') format('woff');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./assets/fonts/Montserrat-Light.woff2') format('woff2'),
+    url('./assets/fonts/Montserrat-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./assets/fonts/Montserrat-MediumItalic.woff2') format('woff2'),
+    url('./assets/fonts/Montserrat-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./assets/fonts/Montserrat-LightItalic.woff2') format('woff2'),
+    url('./assets/fonts/Montserrat-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./assets/fonts/Montserrat-Medium.woff2') format('woff2'),
+    url('./assets/fonts/Montserrat-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./assets/fonts/Montserrat-Regular.woff2') format('woff2'),
+    url('./assets/fonts/Montserrat-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./assets/fonts/Montserrat-SemiBold.woff2') format('woff2'),
+    url('./assets/fonts/Montserrat-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./assets/fonts/Montserrat-SemiBoldItalic.woff2') format('woff2'),
+    url('./assets/fonts/Montserrat-SemiBoldItalic.woff') format('woff');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./assets/fonts/Montserrat-ThinItalic.woff2') format('woff2'),
+    url('./assets/fonts/Montserrat-ThinItalic.woff') format('woff');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./assets/fonts/Montserrat-Thin.woff2') format('woff2'),
+    url('./assets/fonts/Montserrat-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: 'Montserrat' !important;
+}
+
+@mixin media-breakpoint($name) {
+  @if $name ==basic {
+    @content;
+  }
+}
+
+
+@mixin media-breakpoint-up($name) {
+  @if $name ==sm {
+    @media (min-width: 576px) {
+      @content;
+    }
+  }
+
+  @else if $name ==md {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+
+  @else if $name ==lg {
+    @media (min-width: 992px) {
+      @content;
+    }
+  }
+
+  @else if $name ==xl {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+
+  @else if $name ==xxl {
+    @media (min-width: 1400px) {
+      @content;
+    }
+  }
+}
+
+@mixin media-breakpoint-down($name) {
+  @if $name ==sm {
+    @media (max-width: 575.98px) {
+      @content;
+    }
+  }
+
+  @else if $name ==md {
+    @media (max-width: 767.98px) {
+      @content;
+    }
+  }
+
+  @else if $name ==lg {
+    @media (max-width: 991.98px) {
+      @content;
+    }
+  }
+
+  @else if $name ==xl {
+    @media (max-width: 1199.98px) {
+      @content;
+    }
+  }
+
+  @else if $name ==xxl {
+    @media (max-width: 1399.98px) {
+      @content;
+    }
+  }
+}
+
+// copy this 
+
+@include media-breakpoint(basic) {}
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {}
+
+@include media-breakpoint-down(md) {}
+
+@include media-breakpoint-down(sm) {}
+
+
+tr {
+  background-color: #161f2c !important;
+}
+
+
+th {
+  background-color: #161f2c !important;
+}
+
+td {
+  background-color: #161f2c !important;
+}

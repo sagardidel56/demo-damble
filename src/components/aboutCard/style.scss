@@ -1,0 +1,657 @@
+@import './../../index.scss';
+
+.lp-aboutFluid {
+    & .aboutContainer {
+        & .aboutCard {
+            background: #161F2C;
+            // filter: blur(0.5px);
+            border-radius: 18px;
+            // overflow: hidden;
+            padding: 0.8px;
+            position: relative;
+            z-index: 5;
+
+            &.Card2 {
+                & .borderKey {
+                    &::after {}
+
+                    &::before {
+                        content: 'VO2';
+                    }
+                }
+
+                & .aboutImg {
+                    width: 221px;
+                    height: 92px;
+
+                    & img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                & .aboutHead {
+                    margin-top: 10px;
+                }
+
+                & .aboutSubHead {
+                    padding: 0 56px;
+                }
+            }
+
+            &.Card3 {
+                & .borderKey {
+                    &::after {}
+
+                    &::before {
+                        content: 'VO3';
+                    }
+                }
+
+                & .aboutImg {
+                    width: 227px;
+                    // height: 124px;
+                    height: 136px;
+
+                    &.abtImg3 {
+                        margin-top: -32px;
+                    }
+
+                    & img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                & .aboutHead {
+                    margin-top: 10px;
+                }
+
+                & .aboutSubHead {
+                    padding: 0 58px;
+                }
+            }
+
+            &.Card4 {
+                & .borderKey {
+                    &::after {}
+
+                    &::before {
+                        content: 'VO4';
+                    }
+                }
+
+                & .aboutImg {
+                    width: 189px;
+                    height: 155px;
+
+                    &.abtImg4 {
+                        margin-top: -60px;
+                    }
+
+                    & img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                & .aboutHead {
+                    margin-top: 5px;
+                }
+
+                & .aboutSubHead {
+                    padding: 0 96px;
+                }
+            }
+
+            & .borderKey {
+                margin: 0;
+                background-color: #161F2C;
+                position: relative;
+                border-radius: 19.8px;
+                z-index: 5;
+
+                &::before {
+                    content: 'VO1';
+                    background: #5578FE;
+                    box-shadow: 0px 0px 10px #000000;
+                    border-radius: 0px 18px;
+                    width: 50PX;
+                    height: 23px;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 8px;
+                    line-height: 10px;
+                    color: #FFFFFF;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                &::after {
+                    content: '';
+
+                    background: #161F2C;
+                    background-image: url(../../assets/picture/cardBg.svg);
+                    background-repeat: no-repeat;
+                    height: 100%;
+                    width: 100%;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    background-size: contain;
+                    background-position: top 0 right;
+                    border-radius: 18px;
+                    // margin-bottom: 15px;
+                    z-index: -1;
+                }
+            }
+
+            & .aboutImg {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 147px;
+                height: 90px;
+                margin: auto;
+                margin-bottom: 10px;
+
+                & img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            & .aboutHead {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 800;
+                font-size: 18px;
+                line-height: 22px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                margin-bottom: 6px;
+                text-align: center;
+                margin-top: 15px;
+            }
+
+            & .aboutSubHead {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 10px;
+                line-height: 12px;
+                text-align: center;
+                color: #93ACD3;
+                margin-bottom: 33px;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                inset: 0;
+                background: linear-gradient(90deg, #93ACD3 30%, #0D131C 50%);
+                z-index: -5;
+                filter: blur(0.5px);
+                border-radius: 18px;
+            }
+        }
+    }
+}
+
+@include media-breakpoint(basic) {}
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+
+@include media-breakpoint-down(xxl) {
+    .lp-aboutFluid {
+        & .aboutContainer {
+            & .aboutCard {
+                &.Card2 {
+                    &::after {}
+
+                    &::before {}
+
+                    & .aboutImg {
+                        & img {}
+                    }
+
+                    & .aboutHead {}
+
+                    & .aboutSubHead {}
+                }
+
+                &.Card3 {
+                    &::after {}
+
+                    &::before {}
+
+                    & .aboutImg {
+                        &.abtImg3 {}
+
+                        & img {}
+                    }
+
+                    & .aboutHead {}
+
+                    & .aboutSubHead {}
+                }
+
+                &.Card4 {
+                    &::after {}
+
+                    &::before {}
+
+                    & .aboutImg {
+                        &.abtImg4 {}
+
+                        & img {}
+                    }
+
+                    & .aboutHead {}
+
+                    & .aboutSubHead {
+                        padding: 0 75px;
+                    }
+                }
+
+                &::after {}
+
+                &::before {}
+
+                & .aboutImg {
+                    & img {}
+                }
+
+                & .aboutHead {}
+
+                & .aboutSubHead {}
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(xl) {
+    .lp-aboutFluid {
+        & .aboutContainer {
+            & .aboutCard {
+                &.Card2 {
+                    &::after {}
+
+                    &::before {}
+
+                    & .aboutImg {
+                        width: 192px;
+
+                        & img {}
+                    }
+
+                    & .aboutHead {}
+
+                    & .aboutSubHead {
+                        padding: 0 38px;
+                        margin-bottom: 20px;
+                    }
+                }
+
+                &.Card3 {
+                    &::after {}
+
+                    &::before {}
+
+                    & .aboutImg {
+                        width: 196px;
+
+                        &.abtImg3 {}
+
+                        & img {}
+                    }
+
+                    & .aboutHead {}
+
+                    & .aboutSubHead {
+                        margin-bottom: 20px;
+                        padding: 0 47px;
+                    }
+                }
+
+                &.Card4 {
+                    &::after {}
+
+                    &::before {}
+
+                    & .aboutImg {
+                        // width: 135px;
+
+                        &.abtImg4 {}
+
+                        & img {}
+                    }
+
+                    & .aboutHead {}
+
+                    & .aboutSubHead {
+                        padding: 0 38px;
+                        margin-bottom: 20px;
+                    }
+                }
+
+                &::after {}
+
+                &::before {
+                    // width: 45px;
+                    // height: 20px;
+                }
+
+                & .aboutImg {
+                    & img {}
+                }
+
+                & .aboutHead {}
+
+                & .aboutSubHead {
+                    margin-bottom: 20px;
+                    padding: 0 30px;
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .lp-aboutFluid {
+        & .aboutContainer {
+            & .aboutCard {
+                &.Card2 {
+                    &::after {}
+
+                    &::before {}
+
+                    & .aboutImg {
+                        & img {}
+                    }
+
+                    & .aboutHead {}
+
+                    & .aboutSubHead {}
+                }
+
+                &.Card3 {
+                    &::after {}
+
+                    &::before {}
+
+                    & .aboutImg {
+                        &.abtImg3 {}
+
+                        & img {}
+                    }
+
+                    & .aboutHead {}
+
+                    & .aboutSubHead {}
+                }
+
+                &.Card4 {
+                    &::after {}
+
+                    &::before {}
+
+                    & .aboutImg {
+                        width: 149px;
+                        height: 131px;
+
+                        &.abtImg4 {
+                            margin-top: -18px;
+                        }
+
+                        & img {}
+                    }
+
+                    & .aboutHead {}
+
+                    & .aboutSubHead {}
+                }
+
+                &::after {}
+
+                &::before {}
+
+                & .aboutImg {
+                    & img {}
+                }
+
+                & .aboutHead {}
+
+                & .aboutSubHead {}
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .lp-aboutFluid {
+        & .aboutContainer {
+            & .aboutCard {
+                &.Card2 {
+                    &::after {}
+
+                    &::before {}
+
+                    & .aboutImg {
+                        & img {}
+                    }
+
+                    & .aboutHead {}
+
+                    & .aboutSubHead {}
+                }
+
+                &.Card3 {
+                    &::after {}
+
+                    &::before {}
+
+                    & .aboutImg {
+                        &.abtImg3 {}
+
+                        & img {}
+                    }
+
+                    & .aboutHead {}
+
+                    & .aboutSubHead {}
+                }
+
+                &.Card4 {
+                    &::after {}
+
+                    &::before {}
+
+                    & .aboutImg {
+                        height: 121px;
+
+                        &.abtImg4 {}
+
+                        & img {}
+                    }
+
+                    & .aboutHead {}
+
+                    & .aboutSubHead {}
+                }
+
+                &::after {}
+
+                &::before {}
+
+                & .aboutImg {
+                    & img {}
+                }
+
+                & .aboutHead {}
+
+                & .aboutSubHead {}
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .lp-aboutFluid {
+        & .aboutContainer {
+            & .aboutCard {
+                &.Card2 {
+                    &::after {}
+
+                    &::before {
+                        // width: 30px;
+                        // height: 14px;
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 6px;
+                        line-height: 7px;
+                    }
+
+                    & .aboutImg {
+                        width: 114px;
+                        height: 55px;
+                        margin-bottom: 0;
+
+                        & img {}
+                    }
+
+                    & .aboutHead {
+                        font-size: 12px;
+                        margin-top: 0;
+                    }
+
+                    & .aboutSubHead {
+                        font-weight: 600;
+                        font-size: 6px;
+                        line-height: 7px;
+                        padding: 0 29px;
+                        margin-bottom: 12px;
+                    }
+                }
+
+                &.Card3 {
+                    &::after {}
+
+                    &::before {}
+
+                    & .aboutImg {
+                        width: 126px;
+                        height: 75px;
+
+                        &.abtImg3 {
+                            margin-top: -24px;
+                        }
+
+                        & img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+                    & .aboutHead {
+                        font-size: 12px;
+                        margin-top: 0;
+                        line-height: 14px;
+                    }
+
+                    & .aboutSubHead {
+                        font-size: 6px;
+                        padding: 0 33px;
+                        margin-bottom: 12px;
+                        margin-top: 5px;
+                    }
+                }
+
+                &.Card4 {
+                    &::after {}
+
+                    &::before {}
+
+                    & .aboutImg {
+                        width: 85px;
+                        height: 100px;
+                        margin-bottom: 0;
+
+                        &.abtImg4 {
+                            margin-top: -45px;
+                        }
+
+                        & img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+                    & .aboutHead {
+                        font-size: 11px;
+                        margin-top: 0
+                    }
+
+                    & .aboutSubHead {
+                        margin-bottom: 12px;
+                        font-size: 6px;
+                        padding: 0 40px;
+                        line-height: normal;
+                    }
+                }
+
+                & .borderKey {
+                    &::after {}
+
+                    &::before {
+                        width: 30px;
+                        height: 14px;
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 6px;
+                        line-height: 7px;
+                    }
+                }
+
+                & .aboutImg {
+                    width: 88px;
+                    height: 54px;
+
+                    & img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                & .aboutHead {
+                    font-size: 12px;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+
+                & .aboutSubHead {
+                    font-size: 6px;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+}

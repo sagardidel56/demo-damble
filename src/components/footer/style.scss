@@ -1,0 +1,558 @@
+@import '../../index.scss';
+
+.lp-footerSection {
+    & .borderd {
+        // border-top: 1px solid #00990A;
+        border-top: 1px solid #fff;
+
+        &.smBorderd {
+            // border-top: 0.5px solid #00990A !important;
+            border-top: 0.5px solid #fff !important;
+        }
+    }
+
+    & .paymentHeading {
+        font-size: 40px;
+        font-weight: 800;
+        line-height: 49px;
+    }
+
+    & .card {
+        // background: rgba(99, 36, 215, 0.5);
+        background: rgb(13 19 28);
+
+        & .card-body {
+            border: 1px solid #fff;
+            border-radius: 18px;
+
+            & .logos {
+                width: 100%;
+                height: 100%;
+                max-width: 200px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                & img {
+                    // height: 100%;
+                    height: auto;
+                    width: 100%;
+                }
+            }
+        }
+
+        &.cardLogo {
+            border-radius: 23px;
+
+            & .card-body {
+                & .logos {
+                    & img {
+                        max-height: 45px;
+                        max-width: 45px;
+                    }
+                }
+            }
+        }
+
+        &.cryptoLogo {
+            border-radius: 9px;
+
+            & .card-body {
+                & .logos {
+                    & img {
+                        max-height: 45px;
+                        max-width: 45px;
+                    }
+                }
+
+                & .ragisterbonus {
+                    font-size: 20px;
+                    line-height: 24px;
+                    font-weight: 700;
+
+                    & span {
+                        color: #FFD700;
+                    }
+                }
+
+                & .ragisterBtn {
+                    background-color: #00990A;
+                    border-radius: 7px;
+                    height: 39px;
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 15px;
+                    transition: all ease-in-out 0.3s;
+
+                    &:hover {
+                        background-color: darken(#00990A, 5);
+                    }
+                }
+            }
+        }
+
+        &.bardcard {
+            border-radius: 15px;
+
+            & .card-body {
+                & .logos {
+                    max-height: 50px;
+                }
+            }
+        }
+    }
+
+    & .navContent {
+        & .navLink {
+            font-size: 20px;
+            line-height: 24px;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                color: darken(#fff, 15) !important;
+                cursor: pointer;
+            }
+        }
+    }
+
+    & .democontent {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    & .logoImg {
+        height: 35px;
+
+        & img {
+            height: 100%;
+        }
+    }
+
+    & .copyright {
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 21px;
+    }
+}
+
+
+
+
+
+// copy this 
+
+@include media-breakpoint(basic) {}
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {
+    .lp-footerSection {
+        & .borderd {
+            &.smBorderd {}
+        }
+
+        & .paymentHeading {
+            font-size: 38px;
+            line-height: 45px;
+        }
+
+        & .card {
+            & .card-body {
+                & .logos {
+                    & img {}
+                }
+            }
+
+            &.cardLogo {
+                & .card-body {
+                    & .logos {
+                        max-height: 40px;
+                    }
+                }
+            }
+
+            &.cryptoLogo {
+                & .card-body {
+                    & .logos {
+                        & img {
+                            max-height: 45px;
+                            max-width: 45px;
+                        }
+                    }
+
+                    & .ragisterbonus {
+                        font-size: 18px;
+                        line-height: 22px;
+
+                        & span {}
+                    }
+
+                    & .ragisterBtn {
+                        height: 37px;
+
+                        // font-size: 12px;
+                        // line-height: 15px;
+                        &:hover {}
+                    }
+                }
+            }
+
+            &.bardcard {
+                & .card-body {
+                    & .logos {
+                        height: 45px;
+                    }
+                }
+            }
+        }
+
+        & .navContent {
+            & .navLink {
+                font-size: 16px;
+                line-height: 20px;
+
+                &:hover {}
+            }
+        }
+
+        & .democontent {
+            font-size: 16px;
+            line-height: 21px;
+        }
+
+        & .logoImg {
+            height: 28px;
+        }
+
+        & .copyright {
+            font-size: 15px;
+            line-height: 20px;
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .lp-footerSection {
+        & .borderd {
+            &.smBorderd {}
+        }
+
+        & .paymentHeading {
+            font-size: 32px;
+            line-height: 40px;
+        }
+
+        & .card {
+            & .card-body {
+                & .logos {
+                    & img {}
+                }
+            }
+
+            &.cardLogo {
+                & .card-body {
+                    & .logos {
+                        height: 40px;
+                    }
+                }
+            }
+
+            &.cryptoLogo {
+                & .card-body {
+                    & .logos {
+                        height: 40px;
+                        width: 40px;
+                    }
+
+                    & .ragisterbonus {
+                        font-size: 16px;
+                        line-height: 20px;
+
+                        & span {}
+                    }
+
+                    & .ragisterBtn {
+                        height: 35px;
+
+                        // font-size: 12px;
+                        // line-height: 15px;
+                        &:hover {}
+                    }
+                }
+            }
+
+            &.bardcard {
+                & .card-body {
+                    & .logos {
+                        height: 35px;
+                    }
+                }
+            }
+        }
+
+        & .navContent {
+            & .navLink {
+                font-size: 14px;
+                line-height: 18px;
+
+                &:hover {}
+            }
+        }
+
+        & .democontent {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        & .logoImg {
+            height: 25px;
+        }
+
+        & .copyright {
+            font-size: 13px;
+            line-height: 18px;
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .lp-footerSection {
+        & .borderd {
+            &.smBorderd {}
+        }
+
+        & .paymentHeading {
+            font-size: 28px;
+            line-height: 35px;
+        }
+
+        & .card {
+            & .card-body {
+                & .logos {
+                    & img {}
+                }
+            }
+
+            &.cardLogo {
+                border-radius: 5px;
+
+                & .card-body {
+                    & .logos {
+                        height: 35px;
+                    }
+                }
+            }
+
+            &.cryptoLogo {
+                & .card-body {
+                    & .logos {
+                        height: 39px;
+                        width: 39px;
+                    }
+
+                    & .ragisterbonus {
+                        font-size: 14px;
+                        line-height: 18px;
+
+                        & span {}
+                    }
+
+                    & .ragisterBtn {
+                        height: 30px;
+                        font-size: 10px;
+                        line-height: 14px;
+
+                        &:hover {}
+                    }
+                }
+            }
+
+            &.bardcard {
+                border-radius: 5px;
+
+                & .card-body {
+                    & .logos {
+                        height: 32px;
+
+                        & img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        & .navContent {
+            & .navLink {
+                font-size: 12px;
+                line-height: 14px;
+
+                &:hover {}
+            }
+        }
+
+        & .democontent {
+            font-size: 12px;
+            line-height: 16px;
+        }
+
+        & .logoImg {
+            height: 18px;
+        }
+
+        & .copyright {
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .lp-footerSection {
+        & .borderd {
+            &.smBorderd {}
+        }
+
+        & .paymentHeading {
+            font-size: 23px;
+            line-height: 28px;
+        }
+
+        & .card {
+            & .card-body {
+                & .logos {
+                    & img {}
+                }
+            }
+
+            &.cardLogo {
+                & .card-body {
+                    & .logos {
+                        height: 30px;
+                    }
+                }
+            }
+
+            &.cryptoLogo {
+                & .card-body {
+                    & .logos {}
+
+                    & .ragisterbonus {
+                        & span {}
+                    }
+
+                    & .ragisterBtn {
+                        font-size: 10px;
+
+                        &:hover {}
+                    }
+                }
+            }
+
+            &.bardcard {
+                & .card-body {
+                    & .logos {
+                        height: 30px;
+
+                        & img {}
+                    }
+                }
+            }
+        }
+
+        & .navContent {
+            & .navLink {
+                font-size: 10px;
+                line-height: 12px;
+
+                &:hover {}
+            }
+        }
+
+        & .democontent {
+            font-size: 8px;
+            line-height: 10px;
+        }
+
+        & .logoImg {
+            height: 13px;
+        }
+
+        & .copyright {
+            font-size: 8px;
+            line-height: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .lp-footerSection {
+        & .borderd {
+            &.smBorderd {}
+        }
+
+        & .paymentHeading {}
+
+        & .card {
+            & .card-body {
+                & .logos {
+                    & img {}
+                }
+            }
+
+            &.cardLogo {
+                & .card-body {
+                    & .logos {}
+                }
+            }
+
+            &.cryptoLogo {
+                & .card-body {
+                    & .logos {}
+
+                    & .ragisterbonus {
+                        & span {}
+                    }
+
+                    & .ragisterBtn {
+                        &:hover {}
+                    }
+                }
+            }
+
+            &.bardcard {
+                & .card-body {
+                    & .logos {
+                        & img {}
+                    }
+                }
+            }
+        }
+
+        & .navContent {
+            & .navLink {
+                font-size: 8px;
+                line-height: 10px;
+
+                &:hover {}
+            }
+        }
+
+        & .democontent {}
+
+        & .logoImg {}
+
+        & .copyright {}
+    }
+}

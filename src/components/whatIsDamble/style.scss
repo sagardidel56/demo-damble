@@ -1,0 +1,185 @@
+@import './../../index.scss';
+.lp-whatIsDambleFluid{
+    & .whatIsDambleContainer{
+        & .whatIsDambleBoxOuter{
+            padding: 0.8px;
+            background: linear-gradient(149deg, #5578FE -110%, #0D131C 60%);
+            border-radius: 30px;
+            // filter: blur(1px);
+            overflow: hidden;
+            position: relative;
+            z-index: -1;
+            & .whatIsDambleBox{
+                position: relative;
+                z-index: 5;
+                background: #161F2C;
+                border-color: lighten($color: #161F2C, $amount: 20);
+                padding: 50px 107px 62px 111px;
+                // opacity: 0.5;
+                // filter: blur(1px);
+                // border: 3px solid;
+                border-radius: 30px;
+                & .whatIsDambleHeading{
+                    position: relative;
+                    z-index: 6;
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 800;
+                    font-size: 60px;
+                    line-height: 73px;
+                    text-align: center;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    margin-bottom: 82px;
+                }
+                & .whatIsDamblePara{
+                    position: relative;
+                    z-index: 6;
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 800;
+                    font-size: 30px;
+                    line-height: 37px;
+                    text-align: center;
+                    font-variant: all-small-caps;
+                    color: #FFFFFF;
+                    margin-bottom: 62px;
+                    & span{
+                        color: #81B823;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@include media-breakpoint(basic) {
+}
+
+@include media-breakpoint-up(sm) {
+}
+@include media-breakpoint-up(md) {
+}
+@include media-breakpoint-up(lg) {
+}
+@include media-breakpoint-up(xl) {
+}
+@include media-breakpoint-up(xxl) {
+}
+
+
+@include media-breakpoint-down(xxl) {
+    .lp-whatIsDambleFluid{
+        & .whatIsDambleContainer{
+            & .whatIsDambleBoxOuter {
+                & .whatIsDambleBox{
+                    & .whatIsDambleHeading{
+                        margin-bottom: 32px;
+                        font-size: 55px;
+                    }
+                    & .whatIsDamblePara{
+                        margin-bottom: 0;
+                        // font-size: 26px;
+                        & span{
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@include media-breakpoint-down(xl) {
+    .lp-whatIsDambleFluid{
+        & .whatIsDambleContainer{
+            & .whatIsDambleBoxOuter {
+                & .whatIsDambleBox{
+                    padding: 50px 80px 50px 80px;;
+                    & .whatIsDambleHeading{
+                        font-size: 48px;
+                        margin-bottom: 32px;
+                    }
+                    & .whatIsDamblePara{
+                        margin-bottom: 0;
+                        font-size: 25px;
+                        line-height: 32px;
+                        & span{
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@include media-breakpoint-down(lg) {
+    .lp-whatIsDambleFluid{
+        & .whatIsDambleContainer{
+            & .whatIsDambleBoxOuter {
+                & .whatIsDambleBox{
+                    padding: 50px;
+                    & .whatIsDambleHeading{
+                        font-size: 43px;
+                        margin-bottom: 32px;
+                    }
+                    & .whatIsDamblePara{
+                        font-size: 20px;
+                        line-height: 28px;
+                        margin-bottom: 0;
+                        & span{
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@include media-breakpoint-down(md) {
+    .lp-whatIsDambleFluid{
+        & .whatIsDambleContainer{
+            & .whatIsDambleBoxOuter {
+                & .whatIsDambleBox{
+                    padding: 46px 40px 46px 40px;
+                    & .whatIsDambleHeading{
+                        font-size: 30px;
+                        margin-bottom: 20px;
+                    }
+                    & .whatIsDamblePara{
+                        font-size: 16px;
+                        // line-height: 30px;
+                        margin-bottom: 0;
+                        & span{
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@include media-breakpoint-down(sm) {
+    .lp-whatIsDambleFluid{
+        & .whatIsDambleContainer{
+            & .whatIsDambleBoxOuter {
+                & .whatIsDambleBox{
+                    padding: 22px 30px 28px 30px;
+                    & .whatIsDambleHeading{
+                    font-weight: 800;
+                    font-size: 23px;
+                    line-height: 28px;
+                    margin-bottom: 26px;
+                    }
+                    & .whatIsDamblePara{
+                    font-weight: 800;
+                    font-size: 13px;
+                    line-height: 16px;
+                    text-align: center;
+                    font-variant: all-small-caps;
+                    color: #FFFFFF;
+                    margin-bottom: 0;
+                        & span{
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
